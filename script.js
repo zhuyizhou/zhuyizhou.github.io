@@ -7,6 +7,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 添加 gallery 的初始化
     initializeGallery();
+
+    // 移动端菜单控制
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    // 点击导航链接后关闭菜单
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // 点击页面其他地方关闭菜单
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar')) {
+            navLinks.classList.remove('active');
+        }
+    });
 });
 
 // 优化统计数字的动画
