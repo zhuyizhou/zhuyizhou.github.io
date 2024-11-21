@@ -178,7 +178,7 @@ body {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 1.5s ease;
 }
 
 .indicator.active {
@@ -1828,6 +1828,7 @@ h2::before, h2::after {
 }
 
 .member-card {
+    position: relative; 
     flex: 0 0 350px; /* 增加卡片宽度 */
     display: flex;
     flex-direction: column;
@@ -1899,9 +1900,13 @@ h2::before, h2::after {
 }
 
 .member-social {
+    position: absolute;
+    bottom: 1.5rem;
+    inset-inline: 0; 
+    margin-inline: auto;
     display: flex;
     gap: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     justify-content: center;
 }
 

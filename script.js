@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeStats();
     initializeHeroSlider();
     initializePublicationsFilter();
+    
+    // 添加 gallery 的初始化
+    initializeGallery();
 });
 
 // 优化统计数字的动画
@@ -157,4 +160,43 @@ function initializePublicationsFilter() {
             });
         });
     });
+}
+
+// 添加 Gallery 初始化函数
+function initializeGallery() {
+    const timeline = document.querySelector('.timeline');
+    if (!timeline) return; // 如果不在 gallery 页面则返回
+
+    // 获取所有 timeline items 并转换为数组
+    const items = Array.from(timeline.children);
+    
+    // 在显示之前先隐藏所有内容
+    items.forEach(item => {
+        item.style.opacity = '0';
+        item.style.display = 'none';
+    });
+
+    // 按日期排序（从新到旧）
+    items.sort((a, b) => {
+        const dateA = new Date(a.getAttribute('data-date'));
+        const dateB = new Date(b.getAttribute('data-date'));
+        return dateB - dateA;
+    });
+
+    // 重新排序并添加回 DOM
+    items.forEach(item => {
+        timeline.appendChild(item);
+    });
+
+    // 使用 setTimeout 确保排序完成后再显示内容
+    setTimeout(() => {
+        items.forEach(item => {
+            item.style.display = '';
+            // 使用 requestAnimationFrame 来平滑显示内容
+            requestAnimationFrame(() => {
+                item.style.opacity = '1';
+                item.style.transition = 'opacity 0.3s ease-in';
+            });
+        });
+    }, 0);
 } 
