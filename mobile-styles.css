@@ -1,13 +1,13 @@
 @media screen and (max-width: 768px) {
-    /* 全局字体大小调整 */
+    /* 调整全局字体大小 */
     body {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     /* 导航栏样式优化 */
     .navbar {
         flex-direction: column;
-        padding: 10px;
+        padding: 5px;
         position: fixed;
         top: 0;
         left: 0;
@@ -15,6 +15,7 @@
         background: white;
         z-index: 1000;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        min-height: 50px;
     }
 
     .logo {
@@ -22,11 +23,11 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 5px 15px;
+        padding: 3px 10px;
     }
 
     .logo img {
-        height: 40px;
+        height: 30px;
         width: auto;
     }
 
@@ -50,11 +51,12 @@
     }
 
     .nav-links li a {
-        padding: 15px;
+        padding: 12px;
         display: block;
         text-align: center;
         color: #333;
         text-decoration: none;
+        font-size: 13px;
     }
 
     /* 为fixed header添加内容偏移 */
@@ -76,7 +78,7 @@
     }
 
     .hero-content h2 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.3;
         margin-bottom: 10px;
         padding: 0 10px;
@@ -84,7 +86,7 @@
     }
 
     .hero-content p {
-        font-size: 14px;
+        font-size: 13px;
         padding: 0 10px;
     }
 
@@ -94,7 +96,7 @@
     }
 
     .about-section h2 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
@@ -109,7 +111,7 @@
     }
 
     .about-text p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.6;
         margin-bottom: 15px;
     }
@@ -131,7 +133,7 @@
     }
 
     .research-section h2 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
@@ -141,11 +143,11 @@
     }
 
     .highlight-card h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .highlight-card p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     /* PI Card样式重新优化 */
@@ -178,24 +180,24 @@
     }
 
     .pi-info h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 5px;
     }
 
     .pi-info .title {
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 3px;
     }
 
     .pi-info .affiliation {
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 15px;
         padding-bottom: 10px;
         border-bottom: 1px solid #eee;
     }
 
     .pi-info .bio {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.5;
         text-align: justify;
         padding: 0 5px;
@@ -365,7 +367,7 @@
     .people-section,
     .publications-section,
     .news-section {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     /* 汉堡菜单按钮样式优化 */
@@ -379,7 +381,7 @@
     }
 
     .mobile-menu-btn i {
-        font-size: 24px;
+        font-size: 20px;
         color: #333;
     }
 
@@ -443,7 +445,7 @@
     }
 
     .highlight-card p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.5;
     }
 
@@ -520,6 +522,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .member-photo {
@@ -560,335 +565,6 @@
     .member-info .current,
     .member-social,
     .member-slider-container .slider-btn {
-        display: none;
-    }
-
-    /* 特小屏幕优化 */
-    @media screen and (max-width: 360px) {
-        .member-slider {
-            grid-template-columns: 1fr;
-        }
-
-        .member-photo {
-            width: 100px;
-            height: 100px;
-        }
-    }
-
-    /* Publications section统一样式 */
-    .publications-section h2 {
-        font-size: 22px; /* 与其他section标题保持一致 */
-    }
-
-    .publication-card {
-        padding: 12px;
-        margin: 8px 5px;
-    }
-
-    .publication-card h4 {
-        font-size: 15px;
-        line-height: 1.4;
-    }
-
-    /* News section统一样式 */
-    .news-section h2 {
-        font-size: 22px;
-    }
-
-    .news-card {
-        padding: 12px;
-        margin: 8px 5px;
-    }
-
-    /* 移除出版物和新闻的滑动按钮 */
-    .pub-slider-btn,
-    .news-slider-btn {
-        display: none;
-    }
-
-    /* 调整出版物和新闻为网格布局 */
-    .publications-grid,
-    .news-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 5px;
-        overflow-x: visible;
-    }
-
-    /* View All按钮统一样式 */
-    .view-all-container {
-        text-align: center;
-        margin: 15px 0;
-    }
-
-    .view-all-btn {
-        display: inline-block;
-        padding: 8px 20px;
-        background: #0056b3;
-        color: white;
-        text-decoration: none;
-        border-radius: 20px;
-        font-size: 14px;
-        transition: all 0.3s ease;
-        margin-top: 15px;
-    }
-
-    .view-all-btn:hover {
-        background: #003d7a;
-    }
-
-    /* Research section统一样式 */
-    .research-section h2 {
-        font-size: 22px;
-    }
-
-    .highlights-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 0 15px; /* 添加左右间距 */
-    }
-
-    .highlight-card {
-        padding: 15px;
-        margin: 0;
-        width: 100%;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    /* Stats section统一样式 */
-    .stats-section h2 {
-        font-size: 22px;
-    }
-
-    .stats-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 10px 5px;
-    }
-
-    /* 调整section间距 */
-    section {
-        margin-bottom: 30px;
-    }
-
-    /* 优化container边距 */
-    .section-container {
-        margin: 0 5px;
-    }
-
-    /* 移除内容的右缩进 */
-    .section-container,
-    .publications-grid,
-    .news-grid,
-    .member-slider {
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Publications和News section只显示一个项目 */
-    .publications-grid .publication-card:not(:first-child),
-    .news-grid .news-card:not(:first-child) {
-        display: none;
-    }
-
-    /* 确保内容对齐到边缘 */
-    .highlights-grid,
-    .publications-container,
-    .news-container {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* 调整View All容器的样式 */
-    .view-all-container {
-        text-align: center;
-        margin: 15px 0;
-        padding: 0;
-    }
-
-    /* 确保其他标题样式不会覆盖Our Team的样式 */
-    .publications-section h2,
-    .news-section h2,
-    .research-section h2,
-    .stats-section h2 {
-        font-size: 20px !important;
-    }
-
-    /* 统一所有section的容器样式 */
-    .research-section,
-    .publications-section,
-    .news-section,
-    .people-section,
-    .members-section {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* 统一所有内容容器的样式 */
-    .highlights-grid,
-    .publications-container,
-    .news-container,
-    .member-slider-container,
-    .section-container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    /* Research cards样式 */
-    .highlight-card {
-        width: 100%;
-        margin: 10px 0;
-        padding: 20px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    /* Members grid样式 */
-    .member-slider {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        width: 100%;
-    }
-
-    .member-card {
-        width: 100%;
-        margin: 0;
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Publications和News卡片样式 */
-    .publication-card,
-    .news-card {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    /* PI Card样式 */
-    .pi-card {
-        width: 100%;
-        margin: 10px auto;
-        padding: 20px;
-    }
-
-    /* Stats section样式 */
-    .stats-container {
-        width: 80%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    /* View All按钮容器 */
-    .view-all-container {
-        width: 100%;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    /* About section调整 */
-    .about-content {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /* 确保所有section标题居中且宽度一致 */
-    section h2 {
-        width: 90%;
-        text-align: center;
-        margin: 20px auto;
-        padding: 0;
-    }
-
-    /* Members部分的专门样式 - 使用更具体的选择器确保优先级 */
-    #members.members-section {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    #members .member-slider-container {
-        width: 120% !important;
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
-    }
-
-    #members .member-slider {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #members .member-card {
-        width: 100%;
-        margin: 0;
-        padding: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    #members .member-photo {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 8px;
-    }
-
-    #members .member-photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-    #members .member-info {
-        text-align: center;
-        width: 100%;
-    }
-
-    #members .member-info h3 {
-        font-size: 14px;
-        margin: 5px 0;
-        color: #333;
-    }
-
-    #members .member-info .period {
-        font-size: 12px;
-        color: #0056b3;
-        margin: 2px 0;
-        font-weight: 500;
-    }
-
-
-    #members .member-info .education,
-    #members .member-info .current,
-    #members .member-social,
-    #members .slider-btn {
         display: none;
     }
 
@@ -984,74 +660,99 @@
         }
     }
 
-    /* Research页面的移动端样式重写 */
+    /* Research页面的移动端样式 */
     .research-page {
-        padding-top: 60px;
+        padding-top: 50px;
         width: 100%;
         margin: 0;
     }
 
+    /* Research overview部分调整 */
     .research-overview {
         width: 90%;
-        margin: 20px auto;
+        margin: 15px auto;
     }
 
+    /* 确保highlights部分的卡片竖向排列 */
     .research-overview .highlights-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px;
         width: 100%;
     }
 
     .research-overview .highlight-card {
         width: 100%;
-        padding: 20px;
-        margin: 0;
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .highlight-card .highlight-icon {
-        font-size: 24px;
-        margin-bottom: 15px;
-        color: #0056b3;
+        padding: 15px;
+        margin: 0;
     }
 
     .highlight-card h3 {
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 10px;
         color: #333;
     }
 
     .highlight-card p {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 13px;
+        line-height: 1.5;
         color: #666;
     }
 
-    /* 研究领域部分样式 */
+    /* 研究领域详情部分 */
     .research-area {
         width: 100%;
-        margin: 0 0 30px 0;
+        margin: 20px auto;
+        box-shadow: none;
     }
 
     .research-content {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        padding: 20px;
-    }
-
-    /* 移除research-details的宽度限制 */
-    .research-details {
+        padding: 15px;
         width: 100%;
         margin: 0;
+    }
+
+    /* 统一字体大小 */
+    .research-content h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .research-content p,
+    .research-content ul li,
+    .research-content ol li {
+        font-size: 13px;
+        line-height: 1.5;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .research-text {
+        margin-bottom: 15px;
+    }
+
+    .research-text ul,
+    .research-text ol {
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .research-image {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .research-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 
     /* 移除reverse类在移动端的效果 */
@@ -1061,7 +762,7 @@
 
     /* People页面的移动端样式 */
     .people-page {
-        padding-top: 60px;
+        padding-top: 100px;
         width: 90%;
         margin: 0 auto;
     }
@@ -1070,7 +771,7 @@
     .people-category h2 {
         font-size: 18px !important;
         text-align: center;
-        margin: 20px 0 15px;
+        margin: 0 0 30px 0;
         color: #333;
         font-weight: 600;
     }
@@ -1126,7 +827,7 @@
 
     .member-info .education,
     .member-info .current {
-        display: block;  /* 显示教育背景 */
+        display: block !important; /* 显示教育背景 */
         font-size: 12px;
         color: #666;
         margin: 2px 0;
@@ -1161,17 +862,26 @@
         color: #333;
     }
 
-    /* Gallery页面的移动端样式 */
+    /* Gallery页面的移动端样式优化 */
     .gallery-page {
-        padding-top: 60px;
-        width: 80%;  /* 设置整体宽度为80% */
+        padding-top: 120px !important;
+        width: 95%;
         margin: 0 auto;
     }
 
+    .gallery-page h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 600;
+        color: #333;
+    }
+
+    /* 图片网格布局调整为单列 */
     .gallery-grid {
         display: grid;
-        grid-template-columns: 1fr !important;  /* 强制单列显示 */
-        gap: 20px;
+        grid-template-columns: 1fr; /* 改为单列 */
+        gap: 15px;
         width: 100%;
         padding: 0;
     }
@@ -1187,9 +897,8 @@
 
     .gallery-image {
         width: 100%;
-        height: auto;  /* 让高度自适应 */
-        aspect-ratio: 4/3;  /* 保持图片比例 */
-        overflow: hidden;
+        height: auto;
+        aspect-ratio: 16/9; /* 统一图片比例 */
     }
 
     .gallery-image img {
@@ -1200,9 +909,88 @@
 
     .gallery-caption {
         padding: 12px;
-        font-size: 14px;
+        font-size: 13px;
         color: #666;
         text-align: center;
+        line-height: 1.4;
+    }
+
+    /* Gallery页面导航栏样式 */
+    .gallery-page .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    .gallery-page .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gallery-page .logo img {
+        height: 30px;
+    }
+
+    .gallery-page .mobile-menu-btn {
+        display: block !important;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .gallery-page .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery-page .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-page .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+
+    .gallery-page .nav-links li a {
+        display: block;
+        padding: 12px;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .gallery-page .nav-links li a.active {
+        color: #0056b3;
+    }
+
+    /* 特小屏幕适配 */
+    @media screen and (max-width: 360px) {
+        .gallery-page {
+            width: 98%;
+        }
+
+        .gallery-caption {
+            font-size: 12px;
+            padding: 10px;
+        }
     }
 
     /* 图片点击放大效果相关样式 */
@@ -1231,57 +1019,334 @@
 
     /* News页面的移动端样式优化 */
     .news-page {
-        padding-top: 60px;
+        padding-top: 120px !important;
         width: 80%;
         margin: 0 auto;
+        overflow: hidden;
     }
 
-    .news-list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-    }
-
+    /* 新闻卡片样式 */
     .news-item {
         width: 100%;
-        margin: 0;
+        margin: 0 0 15px 0;
         padding: 15px;
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
     }
 
     .news-item h3 {
-        font-size: 16px; /* 减小标题字体 */
-        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 6px;
         color: #333;
+        font-weight: 600;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        width: 100%;
+        white-space: normal; /* 允许标题换行 */
     }
 
     .news-date {
         font-size: 12px;
-        color: #666;
-        margin-bottom: 8px;
+        color: #0056b3;
+        margin-bottom: 6px;
+        font-style: italic;
     }
 
     .news-content {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.5;
-        color: #444;
+        color: #666;
+        margin-bottom: 5px;
+        width: 100%;
+        white-space: normal; /* 允许内容换行 */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
-    /* News过滤按钮样式 */
-    .news-filters {
+    .news-content p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Read More链接样式 */
+    .news-link {
+        font-size: 12px;
+        color: #0056b3;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 8px;
+        align-self: flex-start; /* 确保链接靠左对齐 */
+    }
+
+    /* 特小屏幕适配 */
+    @media screen and (max-width: 360px) {
+        .news-page {
+            width: 90%;
+        }
+
+        .news-item {
+            padding: 12px;
+        }
+
+        .news-item h3 {
+            font-size: 13px;
+        }
+    }
+
+    /* 导航栏样式 */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    .mobile-menu-btn {
+        display: block !important;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
         display: flex;
-        gap: 10px;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 12px;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .nav-links li a.active {
+        color: #0056b3;
+    }
+
+    /* Publications页面的移动端样式优化 */
+    .publications-page {
+        padding-top: 120px !important;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .publications-page h1 {
+        font-size: 20px; /* 增大主标题 */
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: 600;
+        color: #333;
+    }
+
+    /* 调整出版物卡片样式 */
+    .pub-item {
+        padding: 15px;
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+
+    .pub-content h3 {
+        font-size: 14px; /* 调整论文标题 */
+        line-height: 1.4;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    .pub-content .authors {
+        font-size: 12px; /* 调整作者名字 */
+        line-height: 1.4;
+        margin-bottom: 6px;
+        color: #666;
+    }
+
+    .pub-content .journal {
+        font-size: 12px; /* 调整期刊名称 */
+        color: #0056b3;
+        margin-bottom: 8px;
+        font-style: italic;
+    }
+
+    .pub-content .pub-abstract p {
+        font-size: 12px; /* 调整摘要 */
+        line-height: 1.5;
+        margin-bottom: 10px;
+        color: #666;
+    }
+
+    /* 调整链接样式 */
+    .pub-links {
+        margin-top: 10px;
+    }
+
+    .pub-link {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin-right: 10px;
+    }
+
+    /* 年份筛选按钮 */
+    .pub-filters {
         margin-bottom: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
+        text-align: center;
     }
 
     .filter-btn {
-        font-size: 14px;
+        font-size: 13px;
         padding: 6px 12px;
+        margin: 0 5px;
+    }
+
+    /* 特小屏幕适配 */
+    @media screen and (max-width: 360px) {
+        .publications-page {
+            width: 98%;
+        }
+
+        .pub-content h3 {
+            font-size: 13px;
+        }
+
+        .pub-content .authors,
+        .pub-content .journal,
+        .pub-content .pub-abstract p {
+            font-size: 11px;
+        }
+    }
+
+    /* Gallery页面的移动端样式优化 */
+    .gallery-page {
+        padding-top: 120px !important;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* 时间线布局调整为单列 */
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+        opacity: 1; /* 确保内容可见 */
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* 图片卡片样式 */
+    .gallery-card {
+        width: 100%;
+        margin: 0 0 20px 0;
+        background: #fff;
+        border-radius: 12px; /* 增加卡片圆角 */
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .gallery-image,
+    .gallery-images-container {
+        width: 100%;
+        position: relative;
+        margin: 0; /* 移除可能的边距 */
+        padding: 0; /* 移除可能的内边距 */
+    }
+
+    .gallery-image img,
+    .gallery-image-stack img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block; /* 移除图片底部的空隙 */
+        opacity: 1; /* 确保图片可见 */
+    }
+
+    /* 在移动端隐藏分类标签 */
+    .category-tag {
+        display: none;
+    }
+
+    /* 日期标签样式 */
+    .date-tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 11px;
+        padding: 4px 10px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #0056b3;
+        border-radius: 15px;
+        z-index: 2;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* 图片叠加层样式 */
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+        padding: 20px 15px 15px;
+        color: white;
+    }
+
+    .image-overlay h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+        color: white;
+    }
+
+    .image-overlay p {
+        font-size: 13px;
+        color: rgba(255,255,255,0.9);
+    }
+
+    /* 筛选按钮样式 */
+    .gallery-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 0 0 20px 0;
+    }
+
+    .filter-btn {
+        font-size: 12px;
+        padding: 5px 10px;
         border: 1px solid #ddd;
         border-radius: 15px;
         background: #fff;
@@ -1293,139 +1358,5 @@
         background: #0056b3;
         color: #fff;
         border-color: #0056b3;
-    }
-
-    /* News链接样式 */
-    .news-link {
-        display: inline-block;
-        margin-top: 10px;
-        color: #0056b3;
-        font-size: 14px;
-        text-decoration: none;
-    }
-
-    /* 导航栏移动端样式 */
-    .navbar {
-        padding: 1rem;
-        position: relative;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-
-    .mobile-menu-btn {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        color: #333;
-        cursor: pointer;
-        padding: 0.5rem;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        padding: 1rem 0;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: block;
-    }
-
-    .nav-links li {
-        display: block;
-        margin: 0;
-        padding: 0.5rem 1rem;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 0.5rem 0;
-        color: #333;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-
-    .nav-links a.active {
-        color: #007bff;
-    }
-
-    /* 其他移动端响应式样式 */
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 2rem 1rem;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .about-text, .about-image {
-        width: 100%;
-    }
-
-    .about-image {
-        margin-top: 1rem;
-    }
-
-    /* 其他页面需要padding-top */
-    .research-page,
-    .people-page,
-    .publications-page,
-    .gallery-page,
-    .news-page {
-        padding-top: 60px;
-    }
-
-    /* Research页面内容布局调整 */
-    .research-content {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        padding: 20px;
-    }
-
-    .research-text {
-        width: 100%;
-        order: 1; /* 确保文字在上方 */
-    }
-
-    .research-image {
-        width: 100%;
-        order: 2; /* 确保图片在下方 */
-        margin-top: 15px;
-    }
-
-    .research-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
     }
 } 
