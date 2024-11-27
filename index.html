@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&family=Crimson+Text:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?75d7e9299aa5a5c8c786606e03276328"; 
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <style>
         * {
             margin: 0;
@@ -324,6 +334,39 @@
         .subtitle-container {
             margin: 40px 0 40px 0;
         }
+
+        .visit-stats {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85em;
+            font-family: 'Inter', sans-serif;
+            text-align: right;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 2s;
+        }
+
+        .visit-stats span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .visit-stats i {
+            font-size: 0.9em;
+            margin-right: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .visit-stats {
+                bottom: 15px;
+                right: 15px;
+                font-size: 0.75em;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -354,6 +397,16 @@
             <div class="scroll-hint">
                 <i class="fas fa-chevron-down"></i>
                 <span class="scroll-text">Scroll to Enter</span>
+            </div>
+            <div class="visit-stats">
+                <span id="busuanzi_container_site_pv" style="display: none">
+                    <i class="fas fa-eye"></i>
+                    Views: <span id="busuanzi_value_site_pv">0</span>
+                </span>
+                <span id="busuanzi_container_site_uv" style="display: none">
+                    <i class="fas fa-user"></i>
+                    Visitors: <span id="busuanzi_value_site_uv">0</span>
+                </span>
             </div>
         </div>
     </div>
@@ -389,6 +442,14 @@
             if (touchStartY > touchEndY + 50) { // 向上滑动
                 window.location.href = 'home.html';
             }
+        });
+
+        // 修改访问统计显示控制
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.querySelector('#busuanzi_container_site_pv').style.display = 'inline-flex';
+                document.querySelector('#busuanzi_container_site_uv').style.display = 'inline-flex';
+            }, 2000);
         });
     </script>
 </body>
