@@ -86,10 +86,10 @@ body {
 
 .hero {
     height: 80vh;
-    max-height: 600px;
+    max-height: 950px;
     position: relative;
     overflow: hidden;
-    margin-top: -70px;
+    margin-top: 0px;
 }
 
 .hero-slider {
@@ -225,7 +225,7 @@ body {
 }
 
 .about-image {
-    width: 45%;
+    width: 48%;
     padding: 2rem;
     display: flex;
     align-items: center;

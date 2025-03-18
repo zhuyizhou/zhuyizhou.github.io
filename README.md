@@ -1,8 +1,9 @@
+<div align="center">
+<img src="./images/Slideshow1.jpg" width="100%" /><br>
+<div>
+
+
 # Computational Materials Lab @ Westlake University
-
-![Group Photo](images/group_photo.jpg)
-
-## About Us
 
 Our research group focuses on computational materials science, aiming to understand, discover, design, and modify novel inorganic solid materials through computation. By combining artificial intelligence algorithms with various materials computation methods, we can establish an in-depth fundamental understanding of the core structure-property relationships in materials science from the microscopic atomic scale, and discover and design new materials that meet practical application requirements through high-throughput computation and data mining.
 
