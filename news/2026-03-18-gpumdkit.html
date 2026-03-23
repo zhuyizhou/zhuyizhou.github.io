@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing GPUMDkit: A User-Friendly Toolkit for GPUMD and NEP | News</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/westlake_logo.png" alt="Westlake University">
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="../people.html">People</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../news.html" class="active">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="news-detail-page">
+        <div class="news-detail-container">
+            <div class="news-header">
+                <a href="../news.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to News</a>
+                <p class="date">Mar 18, 2026</p>
+                <h1>GPUMDkit: A User-Friendly Toolkit for GPUMD and NEP</h1>
+            </div>
+            
+            <div class="news-detail-content">
+                <img src="../images/gpumdkit-schematic.png" alt="GPUMDkit" class="news-image">
+                
+                <div class="news-text">
+                    <p>Machine-learned interatomic potentials have revolutionized molecular dynamics simulations by providing quantum-mechanical accuracy at empirical-potential speeds. The graphics processing unit molecular dynamics (GPUMD) package, featuring the highly efficient neuroevolution potential (NEP) framework, has emerged as a powerful tool in this domain. However, the complexity of force field development, active learning, and trajectory post-processing often requires extensive manual scripting, imposing a steep learning curve on new users. To address this, we present <strong>GPUMDkit</strong>, a comprehensive and user-friendly toolkit that streamlines the entire simulation workflow for GPUMD and NEP. GPUMDkit integrates a suite of essential functionalities, including format conversion, structure sampling, property calculation, and data visualization, accessible through both interactive and command-line interfaces. Its modular, extensible architecture ensures accessibility for users of all experience levels while allowing seamless integration of new features. By automating complex tasks and enhancing productivity, GPUMDkit substantially lowers the barrier to using GPUMD and NEP programs. This article describes the program architecture and demonstrates its capabilities through practical applications.</p>
+                    
+                    <h2>Architecture & Interfaces</h2>
+                    <p>GPUMDkit provides two distinct interface options to deliver an "out-of-the-box" experience:</p>
+                    <ul>
+                        <li><strong>Interactive Mode:</strong> Delivers intuitive, menu-driven, step-by-step prompts, making it ideal for newcomers exploring complex workflows.</li>
+                        <li><strong>Command-Line Interface:</strong> Caters to experienced users who require efficient execution, batch processing, and seamless integration into automated pipelines through simple one-line commands.</li>
+                    </ul>
+
+                    <h2>Core Functionalities</h2>
+                    <p>The hierarchical design of GPUMDkit organizes an extensive suite of capabilities into clear, accessible modules:</p>
+                    <ul>
+                        <li><strong>Format Conversion:</strong> Supports seamless conversion between common structure and trajectory formats, including VASP, CP2K, ABACUS, and LAMMPS.</li>
+                        <li><strong>Structure Sampling:</strong> Offers random sampling, uniform sampling, and descriptor-based farthest point sampling (FPS) for optimal coverage of configuration space.</li>
+                        <li><strong>Workflow Automation:</strong> Manages fully automated and semi-automated active learning cycles, providing fine-grained control to inspect sampled structures or adjust training settings between iterations.</li>
+                        <li><strong>Property Calculations:</strong> Extracts critical data directly from GPUMD outputs, supporting radial distribution functions, self-diffusion coefficients, ionic conductivity, density of atomistic states (DOAS), and nudged elastic band (NEB) analysis.</li>
+                        <li><strong>Visualization and Analysis:</strong> Integrates a rich set of plotting tools. Users can effortlessly visualize training loss with <code>plt_train.py</code>, track the evolution of thermodynamic information using <code>plt_thermo.py</code>, and analyze transport mechanisms through mean square displacement (MSD) with <code>plt_msd.py</code>.</li>
+                    </ul>
+
+                    <h2>Proven Capability in Diverse Systems</h2>
+                    <p>GPUMDkit's capabilities have been rigorously demonstrated through several complex case studies, connecting macroscopic observations with atomic-scale mechanisms:</p>
+                    <ul>
+                        <li>Unraveling the order-disorder phase transition and anisotropic ionic transport in the LLZO solid electrolyte.</li>
+                        <li>Analyzing structural phase transitions and topological polar structures (e.g., polar vortex arrays) in ferroelectric (Pb,Sr)TiO<sub>3</sub> superlattices.</li>
+                        <li>Processing homogeneous non-equilibrium molecular dynamics (HNEMD) to evaluate phonon-mediated thermal transport in monolayer graphene.</li>
+                    </ul>
+
+                    <div class="publication-info">
+                        <h2>Software Access & Documentation</h2>
+                        <p>GPUMDkit is freely available to the community. By enhancing productivity and automating complex tasks, it allows researchers to focus on scientific questions rather than technical implementation.</p>
+                        <p><strong>GitHub Repository:</strong> <a href="https://github.com/zhyan0603/GPUMDkit" target="_blank">https://github.com/zhyan0603/GPUMDkit</a></p>
+                        <p><strong>Documentation:</strong> <a href="https://zhyan0603.github.io/GPUMDkit/htmls/tutorials.html" target="_blank">https://zhyan0603.github.io/GPUMDkit/htmls/tutorials.html</a> </p>
+                        <p><strong>Preprint:</strong> <a href="https://arxiv.org/abs/2603.17367" target="_blank">arXiv:2603.17367</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Address: Yungu Campus, Westlake University, 600 Dunyu Road, Xihu District, Hangzhou</p>
+            <p>Postal Code: 310030</p>
+            <p>Email: yanzihan@westlake.edu.cn / zhuyizhou@westlake.edu.cn [cite: 22]</p>
+        </div>
+    </footer>
+</body>
+</html>
