@@ -413,8 +413,10 @@
                     // Update publications count in stats section
                     const pubCountEl = document.querySelector('.stat-number[data-target-publications]');
                     if (pubCountEl) {
-                        pubCountEl.setAttribute('data-target', data.publications.length);
-                        pubCountEl.textContent = data.publications.length;
+                        const count = data.publications.length;
+                        pubCountEl.setAttribute('data-target', count);
+                        // Animate the number
+                        animateValue(pubCountEl, 0, count, 2000);
                     }
                 })
                 .catch(error => console.error('Error loading publications:', error));

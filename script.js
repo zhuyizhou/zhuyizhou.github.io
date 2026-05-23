@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 优化统计数字的动画
 function initializeStats() {
-    const stats = document.querySelectorAll('.stat-number');
+    const stats = document.querySelectorAll('.stat-number:not([data-target-publications])');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
