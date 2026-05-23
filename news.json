@@ -1,0 +1,84 @@
+{
+  "news": [
+    {
+      "id": "2026-04-08-acsnano-publication",
+      "title": "New Publication in ACS Nano",
+      "date": "2026-04-08",
+      "year": 2026,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in ACS Nano.",
+      "link": "news/2026-04-08-acsnano-publication.html"
+    },
+    {
+      "id": "2026-03-18-gpumdkit",
+      "title": "The release of GPUMDkit package",
+      "date": "2026-03-18",
+      "year": 2026,
+      "summary": "We are pleased to announce the release of GPUMDkit, a user-friendly toolkit for GPUMD and NEP.",
+      "link": "news/2026-03-18-gpumdkit.html"
+    },
+    {
+      "id": "2025-10-12-npj-publication",
+      "title": "New Publication in npj Comput. Mater.",
+      "date": "2025-10-12",
+      "year": 2025,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>npj Comput. Mater</em></strong>. Here, we propose a feasible principle toward synthesizing complex inorganic solids.",
+      "link": "news/2025-10-12-npj-publication.html"
+    },
+    {
+      "id": "2025-07-25-SciAdv-publication",
+      "title": "New Publication in Sci. Adv.",
+      "date": "2025-07-25",
+      "year": 2025,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Science Advance</em></strong>. Here, we propose a feasible principle toward synthesizing complex inorganic solids.",
+      "link": "news/2025-07-25-SciAdv-publication.html"
+    },
+    {
+      "id": "2025-07-24-AM-publication",
+      "title": "New Publication in Adv. Mater.",
+      "date": "2025-07-24",
+      "year": 2025,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Advanced Materials</em></strong>. Here, a rational design strategy is introduced to stabilize HE-LLZO by combining thermodynamic assessments of interfacial reactivity with targeted compositional engineering.",
+      "link": "news/2025-07-24-AM-publication.html"
+    },
+    {
+      "id": "2025-07-18-JMCA-publication",
+      "title": "New Publication in JMCA",
+      "date": "2025-07-18",
+      "year": 2025,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>J. Mater. Chem. A</em></strong>. In this work, we propose an approach that directly identifies the polar structure after polarization switching, using the symmetry operations of the framework structure.",
+      "link": "news/2025-07-18-JMCA-publication.html"
+    },
+    {
+      "id": "2024-11-20-chem-mater-publication",
+      "title": "New Publication in Chem. Mater.",
+      "date": "2024-11-20",
+      "year": 2024,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Chemistry of Materials</em></strong>. In this work, we found that lithium nonstoichiometry in tetragonal Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub> significantly reduce the activation energy for Li<sup>+</sup> ion diffusion.",
+      "link": "news/2024-11-20-chem-mater-publication.html"
+    },
+    {
+      "id": "2024-09-01-new-member-situ",
+      "title": "New Member Joining",
+      "date": "2024-09-01",
+      "year": 2024,
+      "summary": "We warmly welcome Boyi Situ joining our group as a Ph.D. student. Boyi received his B.S. degree from Yangzhou University. His research will focus on the discovery of structurally constrained ion conductors using generative models....",
+      "link": "news/2024-09-01-new-member-situ.html"
+    },
+    {
+      "id": "2024-07-06-acsnano-publication",
+      "title": "New Publication in ACS Nano",
+      "date": "2024-07-06",
+      "year": 2024,
+      "summary": "Our latest research on high-voltage all-solid-state lithium batteries has been published in <strong><em>ACS Nano</em></strong>. This work demonstrates significant advancements in battery technology through the innovative use of high-valent-element-doped halide electrolytes.",
+      "link": "news/2024-07-06-acsnano-publication.html"
+    },
+    {
+      "id": "2024-03-15-acs-publication",
+      "title": "New Publication in ACS Appl. Energy Mater.",
+      "date": "2024-03-15",
+      "year": 2024,
+      "summary": "We are pleased to announce that our latest research paper titled \"Elucidating Anisotropic Ionic Diffusion Mechanism in Li<sub>3</sub>YCl<sub>6</sub> with Molecular Dynamics Simulations\" has been published in <strong><em>ACS Applied Energy Materials</em></strong>....",
+      "link": "news/2024-03-15-acs-publication.html"
+    }
+  ]
+}

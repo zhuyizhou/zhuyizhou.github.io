@@ -1,34 +1,56 @@
 document.addEventListener('DOMContentLoaded', function() {
+    loadPublications();
+});
+
+function loadPublications() {
+    fetch('publications.json')
+        .then(response => response.json())
+        .then(data => {
+            const publicationsList = document.getElementById('publications-list');
+            if (!publicationsList) return;
+
+            const sortedPublications = data.publications
+                .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            const html = sortedPublications.map(pub => `
+                <div class="pub-item" data-year="${pub.year}" data-date="${pub.date}">
+                    <div class="pub-content">
+                        <h3>${pub.title}</h3>
+                        <p class="authors">${pub.authors}</p>
+                        <p class="journal">${pub.journal}</p>
+                        <div class="pub-abstract">
+                            <p>${pub.abstract}</p>
+                        </div>
+                        <div class="pub-links">
+                            <a href="${pub.doi}" target="_blank" class="pub-link">
+                                <i class="fas fa-external-link-alt"></i> DOI
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pub-image">
+                        <img src="${pub.image}" alt="Publication Figure">
+                    </div>
+                </div>
+            `).join('');
+
+            publicationsList.innerHTML = html;
+            initializeFilters();
+        })
+        .catch(error => console.error('Error loading publications:', error));
+}
+
+function initializeFilters() {
     const filterButtons = document.querySelectorAll('.pub-filters .filter-btn');
-    const publicationsList = document.querySelector('.publications-list');
     const publicationItems = document.querySelectorAll('.pub-item');
 
-    // 将 NodeList 转换为数组，以便进行排序
-    const itemsArray = Array.from(publicationItems);
-
-    // 根据日期排序函数
-    function sortByDate(a, b) {
-        const dateA = new Date(a.getAttribute('data-date'));
-        const dateB = new Date(b.getAttribute('data-date'));
-        return dateB - dateA; // 降序排列，最新的在前面
-    }
-
-    // 初始排序
-    itemsArray.sort(sortByDate);
-    itemsArray.forEach(item => publicationsList.appendChild(item));
-
-    // 为每个筛选按钮添加点击事件
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // 移除所有按钮的active类
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // 为当前点击的按钮添加active类
             this.classList.add('active');
 
             const selectedYear = this.getAttribute('data-year');
 
-            // 筛选并显示相应的出版物
-            itemsArray.forEach(item => {
+            publicationItems.forEach(item => {
                 if (selectedYear === 'all' || item.getAttribute('data-year') === selectedYear) {
                     item.style.display = 'grid';
                 } else {
@@ -37,4 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-}); 
+}

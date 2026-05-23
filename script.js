@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSliders();
     initializeStats();
     initializeHeroSlider();
-    initializePublicationsFilter();
     
     // 添加 gallery 的初始化
     initializeGallery();
@@ -155,33 +154,6 @@ function initializeHeroSlider() {
     const heroSection = document.querySelector('.hero');
     heroSection.addEventListener('mouseenter', stopSlideshow);
     heroSection.addEventListener('mouseleave', startSlideshow);
-}
-
-// publications 筛选功能
-function initializePublicationsFilter() {
-    const filterButtons = document.querySelectorAll('.publications-page .filter-btn');
-    const publicationItems = document.querySelectorAll('.publications-page .pub-item');
-
-    // 为每个筛选按钮添加点击事件
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // 移除所有按钮的active类
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // 为当前点击的按钮添加active类
-            this.classList.add('active');
-
-            const selectedYear = this.getAttribute('data-year');
-
-            // 显示或隐藏相应的出版物
-            publicationItems.forEach(item => {
-                if (selectedYear === 'all' || item.getAttribute('data-year') === selectedYear) {
-                    item.style.display = 'grid'; // 使用grid布局
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
 }
 
 // 添加 Gallery 初始化函数

@@ -1,0 +1,268 @@
+{
+  "publications": [
+    {
+      "id": "2026-04-20-JCTC",
+      "title": "qNEP: A Highly Efficient Neuroevolution Potential with Dynamic Charges for Large-Scale Atomistic Simulations",
+      "authors": "Zheyong Fan*, Benrui Tang, Esmée Berger, Ethan Berger, Erik Fransson, Ke Xu, Zihan Yan, Zhoulin Liu, Zichen Song, Haikuan Dong, Shunda Chen, Lei Li, Ziliang Wang, Yizhou Zhu, Julia Wiktor, Paul Erhart*",
+      "journal": "J. Chem. Theory Comput. 2026, 22, 9, 4787–4801",
+      "year": 2026,
+      "date": "2026-04-20",
+      "doi": "https://doi.org/10.1021/acs.jctc.6c00146",
+      "image": "images/2026-04-20-JCTC.png",
+      "abstract": "Although electrostatics can be incorporated into machine-learned interatomic potentials, existing approaches are computationally very demanding, limiting large-scale, long-time simulations of electrostatics-driven phenomena such as dielectric response, infrared activity, and field–matter coupling. Here, we extend the neuroevolution potential (NEP), a highly efficient machine-learned interatomic potential, to a charge-aware framework (qNEP) by introducing explicit, environment-dependent partial charges. Each ionic partial charge is represented by a neural network as a function of the local descriptor vector, analogous to the NEP site-energy model. This formulation enables the direct prediction of the Born effective charge tensor for each ion and, consequently, the polarization. "
+    },
+    {
+      "id": "2026-04-08-ACSnano",
+      "title": "Regulating Surface Faceting as a Kinetic Switch for Core–Shell Nanoparticle Crystallization Pathways",
+      "authors": "Zhewen Zhu, Yizhou Zhu*",
+      "journal": "ACS Nano 2026, 20, 15, 11790–11800",
+      "year": 2026,
+      "date": "2026-04-08",
+      "doi": "https://doi.org/10.1021/acsnano.6c00369",
+      "image": "images/2026-04-08-ACSnano.png",
+      "abstract": "Nanoparticle morphology is a critical determinant of physical and chemical properties, yet the fundamental mechanisms governing how specific shapes emerge during crystallization remain elusive. In this work, we reveal that the final morphology of binary core–shell nanoparticles is governed by a kinetic bifurcation in nucleation modes: surface-nucleation mode and inner-nucleation mode."
+    },
+    {
+      "id": "2026-03-18-gpumdkit",
+      "title": "GPUMDkit: A User-Friendly Toolkit for GPUMD and NEP",
+      "authors": "Zihan Yan*, Denan Li, Xin Wu, Zhoulin Liu, Chen Hua, Boyi Situ, Hao Yang, Shengjie Tang, Benrui Tang, Ziyang Wang, Shangzhao Yi, Huan Wang, Dian Huang, Ke Li, Qilin Guo, Zherui Chen, Ke Xu, Yanzhou Wang, Ziliang Wang, Gang Tang, Shi Liu, Zheyong Fan, Yizhou Zhu*",
+      "journal": "arXiv:2603.17367",
+      "year": 2026,
+      "date": "2026-03-18",
+      "doi": "https://doi.org/10.48550/arXiv.2603.17367",
+      "image": "images/2026-03-18-gpumdkit.png",
+      "abstract": "Machine-learned interatomic potentials have revolutionized molecular dynamics simulations by providing quantum-mechanical accuracy at empirical-potential speeds. The graphics processing unit molecular dynamics (GPUMD) package, featuring the highly efficient neuroevolution potential (NEP) framework, has emerged as a powerful tool in this domain."
+    },
+    {
+      "id": "2026-03-08-perspective",
+      "title": "A Perspective on Training Machine Learning Force Fields for Solid-State Electrolyte Materials",
+      "authors": "Zihan Yan, Shengjie Tang, Yizhou Zhu*",
+      "journal": "arXiv:2603.07425",
+      "year": 2026,
+      "date": "2026-03-08",
+      "doi": "https://doi.org/10.48550/arXiv.2603.07425",
+      "image": "images/2026-03-08-perspective.png",
+      "abstract": "Machine learning force fields enable high-accuracy modeling of solid-state electrolytes (SSEs). This perspective evaluates dataset size, reference quality, and model architectures. We show that rigid SSE frameworks favor efficient learning, prioritizing data quality over quantity. Crucially, force RMSE does not reliably predict transport performance. By analyzing locality and benchmarking frameworks, we provide practical guidelines to accelerate the development of next-generation solid-state batteries."
+    },
+    {
+      "id": "2026-03-04-sciadv",
+      "title": "In situ TEM unveils the role of residual local strain on light-induced phase segregation in halide perovskites",
+      "authors": "Zhenqin Li, Nuerbiya Aihemaiti, Changxian Xu, Yizhou Zhu, Siying Peng*",
+      "journal": "Sci. Adv. 2026, 12, eaeb3559",
+      "year": 2026,
+      "date": "2026-03-04",
+      "doi": "https://doi.org/10.1126/sciadv.aeb3559",
+      "image": "images/2026-03-04-sciadv.png",
+      "abstract": "Deciphering the mechanisms governing photoinduced phase segregation in mixed halide perovskites is essential to unlock their full potential in stable, high-performance optoelectronic applications. We uncover the mechanism by which residual local strain acts as a key driving force of light-induced phase segregation. By combining in situ transmission electron microscopy with photoluminescence spectroscopy, we observe structural evolution and photocarrier behavior during phase segregation and after re-mixing."
+    },  
+    {
+      "id": "2026-02-27-NC",
+      "title": "Equivariant diffusion solution for inorganic crystal structure determination from powder X-ray diffraction data",
+      "authors": "Dongfang Yu, Zhewen Zhu, Fucheng Leng, Yizhou Zhu*",
+      "journal": "Nat. Commun. 2026, 17, 3274",
+      "year": 2026,
+      "date": "2026-02-27",
+      "doi": "https://doi.org/10.1038/s41467-026-70035-9",
+      "image": "images/2026-02-27-NC.png",
+      "abstract": "Determining the crystal structures of inorganic materials is critical because atomic arrangement governs their physical, chemical, and mechanical properties. Powder X-ray diffraction (PXRD) remains a cornerstone characterization technique, yet solving structures directly from experimental PXRD patterns is challenging and traditionally depends heavily on expert manual interpretation."
+    },
+    {
+      "id": "2026-01-29-JCIM",
+      "title": "Improving robustness and training efficiency of machine-learned potentials by incorporating short-range empirical potentials",
+      "authors": "Zihan Yan, Zheyong Fan, Yizhou Zhu*",
+      "journal": "J. Chem. Inf. Model. 2026, 66, 3, 1406–1413",
+      "year": 2026,
+      "date": "2026-01-29",
+      "doi": "https://doi.org/10.1021/acs.jcim.5c02335",
+      "image": "images/NEP-ZBL-TOC.png",
+      "abstract": "Machine learning force fields (MLFFs) are powerful tools for materials modeling, but their performance is often limited by training data set quality, particularly the lack of rare event configurations. This limitation undermines their accuracy and robustness in long- and large-scale molecular dynamics simulations. In this work, we demonstrate a simple yet general approach to improving robustness and training efficiency by utilizing a hybrid MLFF framework that integrates an empirical short-range repulsive potential."
+    },
+    {
+      "id": "2026-01-16-NC",
+      "title": "Suppressing solvent adducts via coordination competition enables scalable perovskite photovoltaics",
+      "authors": "Lu Jin, Shaochen Zhang, Jingjing Zhou, Shenglong Chu, Xiaonan Wang, Zihan Yan, Xiaohe Miao, Rui Zhang, Qingqing Liu, Huazheng Li, Jiazhe Xu, Xu Zhang, Ke Zhao, Donger Jin, Yizhou Zhu, Feng Gao, Jingjing Xue, Rui Wang*",
+      "journal": "Nat. Commun. 2026, 17, 1737",
+      "year": 2026,
+      "date": "2026-01-16",
+      "doi": "https://doi.org/10.1038/s41467-026-68439-8",
+      "image": "images/2026-01-16-NC.png",
+      "abstract": "Scalable coating methods are indispensable for the commercialization of perovskite photovoltaics. However, fundamental divergences in crystallization dynamics hinder the direct adaptation of spin-coating optimization strategies. Furthermore, the limited understanding of crystallization control under scalable conditions constrains the fabrication of high-quality perovskite films."
+    },
+    {
+      "id": "2025-11-25-ACSSCE",
+      "title": "Insights into the Role of Fluoride Impurities in Direct Regeneration of Ni-Rich Layered Cathodes",
+      "authors": "Zhi Zou, Bin Xie, Hang Liu, Boyi Situ, Yun-Chao Yin, Xueshan Hu, Yue Xu, Wenbin Liu, Junna Shi, Yuanyuan Yao, Yizhou Zhu*, Jiayu Wan*",
+      "journal": "ACS Sustainable Chem. Eng. 2025, 13, 48, 20649–20660",
+      "year": 2025,
+      "date": "2025-11-25",
+      "doi": "https://doi.org/10.1021/acssuschemeng.5c04909",
+      "image": "images/2025-11-25-ACSSCE.png",
+      "abstract": "Battery recycling via direct regeneration has emerged as a next-generation strategy to simultaneously address environmental pollution and resource waste issues caused by end-of-life lithium-ion batteries. While previous research on direct regeneration has mainly focused on materials or repair processes, it has overlooked the impact of lithium fluoride (LiF) impurities, which can significantly degrade the electrochemical performance of regenerated materials. "
+    },
+    {
+      "id": "2025-10-12-npj",
+      "title": "Automated Phase Mapping of High Throughput X-ray Diffraction Data Encoded with Domain-Specific Materials Science Knowledge",
+      "authors": "Dongfang Yu, Sean Griesemer, Tzu-chen Liu, Chris Wolverton*, Yizhou Zhu*",
+      "journal": "npj Comput. Mater. 2025, 11, 354",
+      "year": 2025,
+      "date": "2025-10-12",
+      "doi": "https://doi.org/10.1038/s41524-025-01837-6",
+      "image": "images/2025-10-12-npj.png",
+      "abstract": "Combinatorial synthesis and high-throughput characterization have become powerful tools to accelerate the discovery and design of novel materials. Correctly extracting information about the constituent phases and gaining materials insight from high-throughput X-ray diffraction data of combinatorial libraries is a crucial step in establishing the composition–structure–property relationship."
+    },
+    {
+      "id": "2025-09-10-Nature",
+      "title": "Probing the heterogeneous nature of LiF in solid–electrolyte interphases",
+      "authors": "Xiangsi Liu, Shuyang Li, Chen Yuan, Bizhu Zheng, Gangya Cheng, Yufan Chen, Xingyu Lu, Danyu Gu, Baijiang Lv, Hao Li, Zihan Yan, Hui Qian, Yizhou Zhu*, Dalin Sun, Yun Song*, Yuxuan Xiang*",
+      "journal": "Nature 2025, 646, 102–107",
+      "year": 2025,
+      "date": "2025-09-10",
+      "doi": "https://doi.org/10.1038/s41586-025-09498-7",
+      "image": "images/2025-09-10-nature.png",
+      "abstract": "The electrolyte–electrode interface serves as the foundation for a myriad of chemical and physical processes. In battery chemistry, the formation of a well-known solid–electrolyte interphase (SEI) plays a pivotal role in ensuring the reversible operations of rechargeable lithium-ion batteries (LIBs). However, characterizing the precise chemical composition of the low crystallinity and highly sensitive SEI presents a formidable challenge."
+    },
+    {
+      "id": "2025-07-25-SciAdv",
+      "title": "Unveiling phase evolution of complex oxides toward precise solid-state synthesis",
+      "authors": "Lin Yang, Zhewen Zhu, Yitian Feng, Daxian Zuo, Shi Huang, Yao Yang, Lihui Zhou, Stephen J. Harris, Lin Zeng, Yizhou Zhu*, and Jiayu Wan*",
+      "journal": "Sci. Adv. 2025, 11, eadx3927",
+      "year": 2025,
+      "date": "2025-07-25",
+      "doi": "https://doi.org/10.1126/sciadv.adx3927",
+      "image": "images/2025-07-25-SciAdv.png",
+      "abstract": "The precise synthesis of high-purity materials is crucial in accelerating materials discovery. However, the lack of theoretical understanding and practical guidance poses challenges, particularly for materials with compositional and structural complexity. Here, we propose a feasible principle toward synthesizing complex inorganic solids. This principle involves the introduction of an inducer that induces crucial intermediates,"
+    },
+    {
+      "id": "2025-07-24-AM",
+      "title": "Rational Design of High-Entropy Garnet Electrolytes via Computational Screening for Stable Lithium Interfaces in All-Solid-State Batteries",
+      "authors": "Yitian Feng, Zhewen Zhu, Lin Yang, Yongbiao Mu, Zihan Yan, Haoting Cui, Yu Ye, Daxian Zuo, Qiwei Hu, Yizhou Zhu*, Lin Zeng*, Jiayu Wan*",
+      "journal": "Adv. Mater. 2025, e09838",
+      "year": 2025,
+      "date": "2025-07-24",
+      "doi": "https://doi.org/10.1002/adma.202509838",
+      "image": "images/2025-07-24-AM.png",
+      "abstract": "All-solid-state lithium metal batteries offer enhanced safety and energy density by replacing flammable liquid electrolytes with solid-state electrolytes (SSEs). High-entropy (HE) SSEs, leveraging multi-principal-element compositions, present a vast design space to achieve exceptional ionic conductivity and electrochemical stability. However, the chemical complexity of HE SSEs introduces challenges in interfacial instability with lithium metal anodes due to the unavoidable inclusion of reactive elements."
+    },
+    {
+      "id": "2025-07-18-JMCA",
+      "title": "Utilizing Symmetry Operations for High-throughput Ferroelectric Materials Discovery",
+      "authors": "Xizhe Zhang, Yizhou Zhu*",
+      "journal": "J. Mater. Chem. A 2025, 13, 27577-27585",
+      "year": 2025,
+      "date": "2025-07-18",
+      "doi": "https://doi.org/10.1039/D5TA01199J",
+      "image": "images/2025-07-18-JMCA.png",
+      "abstract": "Ferroelectric materials are technically important for applications such as information storage devices and in-memory computing, due to their reversible spontaneous polarization. Computational approaches can help to identify potential ferroelectric materials among a large number of candidate materials, which significantly accelerate the discovery of new ferroelectrics and expand our understanding of potentially available ferroelectric materials. Spontaneous polarization and the switching barrier are generally considered as two critical screening criteria."
+    },
+    {
+      "id": "2025-04-17-ACSnano",
+      "title": "Stabilizing Halide Electrolytes against Lithium Metal with a Self-Limiting Layer for All-Solid-State Lithium Metal Batteries",
+      "authors": "Guangwen Zhang, Deyuan Li, Dongfang Yu, Ao Du, Zihui Chen, Huilin Ge, Weiqi Hou, Yizhou Zhu*, Chunpeng Yang*",
+      "journal": "ACS Nano 2025, 19, 15, 14839–14847",
+      "year": 2025,
+      "date": "2025-04-17",
+      "doi": "https://doi.org/10.1021/acsnano.4c18584",
+      "image": "images/TOC-ACSnano-20250417.jpeg",
+      "abstract": "Halide solid-state electrolytes (SSEs) with high ionic conductivity and high-voltage stability have attracted significant interest for application in all-solid-state batteries. However, they are not chemically stable against the lithium (Li) metal anode due to continuous side reduction reactions, hindering the application of halide SSEs in high-energy-density all-solid-state Li metal batteries (ASSLMBs). Here, we report a self-limiting layer (SLL) composed of InF3 and Li2ZrCl6 (LZC) to stabilize the halide SSEs and Li metal anode interface,"
+    },
+    {
+      "id": "2025-02-27-NanoLett",
+      "title": "Advanced High-Entropy Halide Solid Electrolytes Enabling High-Voltage, Long-Cycling All-Solid-State Batteries",
+      "authors": "Yu Ye, Zhi Gu, Jiazhong Geng, Kangdi Niu, Pengcheng Yu, Yu Zhou, Junhao Lin*, Haw Jiunn Woo*, Yizhou Zhu*, Jiayu Wan*",
+      "journal": "Nano Lett. 2025, 25, 10, 3747–3755",
+      "year": 2025,
+      "date": "2025-02-27",
+      "doi": "https://doi.org/10.1021/acs.nanolett.4c05460",
+      "image": "images/2025-02-27-nanolett.png",
+      "abstract": "Stable solid electrolytes are essential for advancing the safety and energy density of lithium batteries, especially in high-voltage applications. In this study, we designed an innovative high-entropy chloride solid electrolyte (HE-5, Li2.2In0.2Sc0.2Zr0.2Hf0.2Ta0.2Cl6), using multielement doping to optimize both ionic conductivity and high-voltage stability. The high-entropy disordered lattice structure facilitates lithium-ion mobility, achieving an ionic conductivity of 4.69 mS cm–1 at 30 °C and an activation energy of 0.300 eV."
+    },
+    {
+      "id": "2025-01-02-NC",
+      "title": "Li2ZrF6 protective layer enabled high-voltage LiCoO2 positive electrode in sulfide all-solid-state batteries",
+      "authors": "Xing Zhou, Chia-Yu Chang, Dongfang Yu, Kai Zhang, Zhi Li, Shi-Kai Jiang, Yizhou Zhu*, Yongyao Xia*, Bing Joe Hwang*, Yonggang Wang*",
+      "journal": "Nat Communication, 2025, 16, 112",
+      "year": 2025,
+      "date": "2025-01-02",
+      "doi": "https://doi.org/10.1038/s41467-024-55695-9",
+      "image": "images/2025-01-02-NC.png",
+      "abstract": "The application of high-voltage positive electrode materials in sulfide all-solid-state lithium batteries is hindered by the limited oxidation potential of sulfide-based solid-state electrolytes (SSEs). Consequently, surface coating on positive electrode materials is widely applied to alleviate detrimental interfacial reactions. However, most coating layers also react with sulfide-based SSEs, generating electronic conductors and causing gradual interface degradation and capacity fading. To address this, ..."
+    },
+    {
+      "id": "2024-11-20-CM",
+      "title": "Impact of lithium nonstoichiometry on ionic diffusion in tetragonal garnet-type Li7La3Zr2O12",
+      "authors": "Zihan Yan, Yizhou Zhu*",
+      "journal": "Chemistry of Materials, 2024, 36, 23, 11551–11557",
+      "year": 2024,
+      "date": "2024-11-20",
+      "doi": "https://doi.org/10.1021/acs.chemmater.4c02454",
+      "image": "images/CM.png",
+      "abstract": "The tetragonal garnet-type Li7La3Zr2O12 (t-LLZO) has been widely studied as a promising solid electrolyte for all-solid-state lithium batteries. In this work, we systematically investigate the impact of lithium content on the ionic transport properties of t-LLZO using first-principles calculations and molecular dynamics simulations. Our findings reveal the critical role of lithium vacancy concentration in determining the ionic conductivity..."
+    },
+    {
+      "id": "2024-10-21-Angew",
+      "title": "High Configuration Entropy Promises Electrochemical Stability of Chloride Electrolytes for High-Energy, Long-Life All-Solid-State Batteries",
+      "authors": "Deyuan Li, Dongfang Yu, Guangwen Zhang, Ao Du, Zilin Ye, Yiran Jia, Weiqi Hou, Tianze Xu, Fangbing Li, Sijia Chi, Yizhou Zhu*, Chunpeng Yang*",
+      "journal": "Angew. Chem. Int. Ed., 2024, e202419735",
+      "year": 2024,
+      "date": "2024-10-21",
+      "doi": "https://doi.org/10.1002/anie.202419735",
+      "image": "images/2024-10-21-Angew.png",
+      "abstract": "Solid-state electrolytes (SSEs) with high ionic conductivity, stability, and interface compatibility are indispensable for high-energy-density and long-life all-solid-state batteries (ASSBs), yet there are scarce SSEs with sufficient ionic conductivity and electrochemical stability. In this study, with a high-entropy SSE (HE-SSE, Li2.9In0.75Zr0.1Sc0.05Er0.05Y0.05Cl6), we show the high configuration entropy has a thermodynamically positive relationship with the high-voltage stability. As a result, the ASSBs with HE-SSE and high-voltage cathode materials exhibit superior high-voltage and long-cycle stability, ..."
+    },
+    {
+      "id": "2024-07-06-ACSnano",
+      "title": "High-voltage long-cycling all-solid-state lithium batteries with high-valent-element-doped halide electrolytes",
+      "authors": "Yu Ye, Jiazhong Geng, Daxian Zuo, Kangdi Niu, Diancheng Chen, Junhao Lin, Xihan Chen*, Haw Jiunn Woo*, Yizhou Zhu*, Jiayu Wan*",
+      "journal": "ACS Nano, 2024, 18, 28, 18368–18378",
+      "year": 2024,
+      "date": "2024-07-06",
+      "doi": "https://doi.org/10.1021/acsnano.4c02678",
+      "image": "images/acsnano.png",
+      "abstract": "All-solid-state batteries (ASSBs) have garnered considerable attention as promising candidates for next-generation energy storage systems due to their potentially simultaneously enhanced safety capacities and improved energy densities. However, the solid future still calls for materials with high ionic conductivity, electrochemical stability, and favorable interfacial compatibility. In this study, we present a series of halide solid-state electrolytes (SSEs) utilizing a doping strategy with highly valent elements, demonstrating an outstanding combination of enhanced ionic conductivity and oxidation stability. Among these, ..."
+    },
+    {
+      "id": "2024-03-15-ACSAEM",
+      "title": "Elucidating Anisotropic Ionic Diffusion Mechanism in Li3YCl6 with Molecular Dynamics Simulations",
+      "authors": "Jiazhong Geng, Zihan Yan, Yizhou Zhu*",
+      "journal": "ACS Applied Energy Materials, 2024, 7, 16, 7019–7024",
+      "year": 2024,
+      "date": "2024-03-15",
+      "doi": "https://doi.org/10.1021/acsaem.4c01249",
+      "image": "images/ACS1.png",
+      "abstract": "Halide solid electrolytes have emerged as promising candidates for all-solid-state batteries due to their high ionic conductivity and good electrochemical stability. Here, we investigate the ionic transport mechanism in Li3YCl6 using molecular dynamics simulations. Our results reveal a pronounced anisotropic diffusion behavior, with the fastest lithium-ion transport occurring along specific crystallographic directions..."
+    },
+    {
+      "id": "2024-01-01-SCC",
+      "title": "From atomistic modeling to materials design: computation-driven material development in lithium-ion batteries",
+      "authors": "Xiangrong Li, Xiang Chen, Qiang Bai, Yifei Mo, Yizhou Zhu*",
+      "journal": "Science China Chemistry, 2024, 67, 276–290",
+      "year": 2024,
+      "date": "2024-01-01",
+      "doi": "https://doi.org/10.1007/s11426-022-1506-1",
+      "image": "images/2024-SCC.png",
+      "abstract": "As an advanced energy storage system, lithium-ion batteries play an essential role in modern technologies. Despite their ubiquitous success, there is a great demand for continuous improvements of the battery performance, including higher energy density, lower safety risk, longer cycling life, and lower cost. Such performance improvement requires the design and development of novel electrode and electrolyte materials that exhibit desirable properties and satisfy strict requirements. Atomistic modeling can provide a unique perspective to fundamentally understand and rationally design battery materials. In this paper, we review a few recent successful examples of computation-driven discovery and design in electrode and electrolyte materials. Particularly, we highlight how atomistic modeling can reveal the underlying mechanisms, predict the important properties, and guide the design and engineering of electrode ..."
+    },
+    {
+      "id": "2023-08-15-ESM",
+      "title": "Discovery of high entropy garnet solid-state electrolytes via ultrafast synthesis",
+      "authors": "Yitian Feng, Lin Yang, Zihan Yan, Daxian Zuo, Zhewen Zhu, Lin Zeng, Yizhou Zhu*, Jiayu Wan*",
+      "journal": "Energy Storage Materials, 2023, 63, 103053",
+      "year": 2023,
+      "date": "2023-08-15",
+      "doi": "https://doi.org/10.1016/j.ensm.2023.103053",
+      "image": "images/ESM.png",
+      "abstract": "High-entropy materials have emerged as a promising strategy for developing advanced functional materials with enhanced properties. In this work, we report the discovery and characterization of novel high-entropy garnet-type solid electrolytes synthesized through an ultrafast approach. The materials exhibit improved ionic conductivity and stability compared to conventional garnets, demonstrating the potential of entropy engineering in solid-state electrolyte design. Our findings provide new insights into the development of high-performance solid electrolytes for next-generation batteries..."
+    },
+    {
+      "id": "2022-10-12-AMR",
+      "title": "Developing Classical Interatomic Potentials for Solid Electrolytes",
+      "authors": "Zhewen Zhu, Yizhou Zhu*",
+      "journal": "Accounts of Materials Research, 2022, 3, 1101–1105",
+      "year": 2022,
+      "date": "2022-10-12",
+      "doi": "https://pubs.acs.org/doi/10.1021/accountsmr.2c00184",
+      "image": "images/2022-AMR.png",
+      "abstract": "With improved safety, increased energy density, longer cycling life, and higher power density, all-solid-state battery is considered as a potential successor and complement to the currently commercialized lithium-ion battery. A key component of all-solid-state lithium-ion battery includes the solid electrolyte materials, which are ceramic-based lithium superionic conductors. Ideal solid electrolyte materials should have high ionic conductivity (> 1 mS/cm) at room temperature, which is a rare property for most lithium-containing inorganic materials. In the past few decades, extensive research efforts have been focused on the understanding, design, and development of novel solid electrolytes ..."
+    }
+  ]
+}
