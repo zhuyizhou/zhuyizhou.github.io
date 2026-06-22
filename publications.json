@@ -12,6 +12,17 @@
       "abstract": "Machine-learned interatomic potentials have revolutionized molecular dynamics simulations by providing quantum-mechanical accuracy at empirical-potential speeds. The graphics processing unit molecular dynamics (GPUMD) package, featuring the highly efficient neuroevolution potential (NEP) framework, has emerged as a powerful tool in this domain."
     },
     {
+      "id": "2026-05-21-aem",
+      "title": "Bifunctional Sn/NaF Interlayer Enables Stable Solid State Sodium Batteries",
+      "authors": "Tinghu Liu, Ren Li, Huazhang Sun, Yifan Yang, Jing Yang*, Huilin Pan*, Yizhou Zhu*, Xiayin Yao*",
+      "journal": "Adv. Energy Mater., 2026, e71103",
+      "year": 2026,
+      "date": "2026-05-21",
+      "doi": "https://doi.org/10.1002/aenm.71103",
+      "image": "images/2026-05-21-aem.png",
+      "abstract": "The practical application of sodium superionic conductor (NASICON) electrolytes in solid-state sodium batteries is restricted by poor interfacial compatibility between the solid electrolyte and Na anode, as well as continuous dendrite growth."
+    },    
+    {
       "id": "2026-04-20-JCTC",
       "title": "qNEP: A Highly Efficient Neuroevolution Potential with Dynamic Charges for Large-Scale Atomistic Simulations",
       "authors": "Zheyong Fan*, Benrui Tang, Esmée Berger, Ethan Berger, Erik Fransson, Ke Xu, Zihan Yan, Zhoulin Liu, Zichen Song, Haikuan Dong, Shunda Chen, Lei Li, Ziliang Wang, Yizhou Zhu, Julia Wiktor, Paul Erhart*",
