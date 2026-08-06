@@ -1,6 +1,28 @@
 {
   "publications": [
     {
+      "id": "2026-07-15-JMCA",
+      "title": "Computational evaluation of artificial coating materials for improved interface stability in all-solid-state alkali metal batteries",
+      "authors": "Xinlin Wang, Ren Li, Yizhou Zhu*",
+      "journal": "J. Mater. Chem. A, 2026 (online)",
+      "year": 2026,
+      "date": "2026-07-15",
+      "doi": "https://doi.org/10.1039/d6ta04307k",
+      "image": "images/2026-07-15-JMCA.png",
+      "abstract": "We develop a multi-property evaluation framework to systematically assess lithium- and sodium-based binary compounds as artificial coatings for all-solid-state batteries. By integrating interfacial energy, bulk reaction energy, and electronic band gaps, this approach captures essential performance trade-offs and establishes practical design guidelines for coating materials in lithium- and sodium-based energy storage systems."
+    },
+    {
+      "id": "2026-06-16-ChemSci",
+      "title": "Multi-anion/cation engineering enables fast ion transport and stable interfaces in Zr-based halide electrolytes for all-solid-state batteries",
+      "authors": "Xuele Xu, Zihan Yan, Jiachen Ying, Linghao Deng, Mingxing Liu, Yifei Xu, Yao Liu, Yiwen Zhang, Yizhou Zhu*, Yongyao Xia*, Yonggang Wang*",
+      "journal": "Chem. Sci., 2026 (online)",
+      "year": 2026,
+      "date": "2026-06-16",
+      "doi": "https://doi.org/10.1039/d6sc04008j",
+      "image": "images/2026-06-16-ChemSci.png",
+      "abstract": "We propose a synergistic multi-anion and cation co-doping strategy to construct a highly amorphous halide electrolyte, Li<sub>2.25</sub>Zr<sub>0.75</sub>Al<sub>0.25</sub>Cl<sub>4.2</sub>O<sub>0.8</sub>F<sub>0.2</sub>. O<sup>2−</sup> induces amorphization facilitating Li<sup>+</sup> transport, Al<sup>3+</sup> substitution increases Li<sup>+</sup> concentration, and F<sup>−</sup> incorporation enhances oxidative stability and forms a robust F-rich CEI. The optimized electrolyte achieves an ionic conductivity of 1.12 × 10<sup>−3</sup> S cm<sup>−1</sup>, and the ASSLB retains ~70% capacity after 500 cycles at 0.5C."
+    },
+    {
       "id": "2026-06-03-gpumdkit",
       "title": "GPUMDkit: A User-Friendly Toolkit for GPUMD and NEP",
       "authors": "Zihan Yan*, Denan Li, Xin Wu, Zhoulin Liu, Chen Hua, Boyi Situ, Hao Yang, Shengjie Tang, Benrui Tang, Ziyang Wang, Shangzhao Yi, Huan Wang, Dian Huang, Ke Li, Qilin Guo, Zherui Chen, Ke Xu, Yanzhou Wang, Ziliang Wang, Gang Tang, Shi Liu, Zheyong Fan, Yizhou Zhu*",

@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "id": "2026-07-15-JMCA-publication",
+      "title": "New Publication in J. Mater. Chem. A",
+      "date": "2026-07-15",
+      "year": 2026,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>J. Mater. Chem. A</em></strong>. In this work, we develop a multi-property evaluation framework to systematically assess lithium- and sodium-based binary compounds as artificial coatings for all-solid-state batteries.",
+      "link": "news/2026-07-15-JMCA-publication.html"
+    },
+    {
+      "id": "2026-06-16-ChemSci-publication",
+      "title": "New Publication in Chem. Sci.",
+      "date": "2026-06-16",
+      "year": 2026,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Chem. Sci.</em></strong>. In this work, we propose a synergistic multi-anion and cation co-doping strategy to construct a highly amorphous halide electrolyte, enabling fast ion transport and stable interfaces.",
+      "link": "news/2026-06-16-ChemSci-publication.html"
+    },
+    {
       "id": "2026-04-08-acsnano-publication",
       "title": "New Publication in ACS Nano",
       "date": "2026-04-08",
