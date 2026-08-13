@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "id": "2026-08-08-AEM-publication",
+      "title": "New Publication in Adv. Energy Mater.",
+      "date": "2026-08-08",
+      "year": 2026,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Adv. Energy Mater.</em></strong>. In this work, we develop a structural-feature-constrained generative model for the computational discovery of novel sulfide lithium superionic conductors.",
+      "link": "news/2026-08-08-AEM-publication.html"
+    },
+    {
       "id": "2026-07-15-JMCA-publication",
       "title": "New Publication in J. Mater. Chem. A",
       "date": "2026-07-15",

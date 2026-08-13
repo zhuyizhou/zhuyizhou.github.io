@@ -1,6 +1,17 @@
 {
   "publications": [
     {
+      "id": "2026-08-08-AEM",
+      "title": "Computational Discovery of Novel Sulfide Lithium Superionic Conductors via a Structural-Feature-Constrained Generative Model",
+      "authors": "Boyi Situ, Zihan Yan, Yizhou Zhu*",
+      "journal": "Adv. Energy Mater. 2026, e71368",
+      "year": 2026,
+      "date": "2026-08-08",
+      "doi": "https://doi.org/10.1002/aenm.71368",
+      "image": "images/2026-08-08-AEM.png",
+      "abstract": "We develop a structural-feature-constrained generative model for the computational discovery of novel sulfide lithium superionic conductors. By constraining key structural features, the model efficiently generates promising sulfide conductors and identifies new materials with high ionic conductivity, expanding the design space for solid-state electrolytes."
+    },
+    {
       "id": "2026-07-15-JMCA",
       "title": "Computational evaluation of artificial coating materials for improved interface stability in all-solid-state alkali metal batteries",
       "authors": "Xinlin Wang, Ren Li, Yizhou Zhu*",
