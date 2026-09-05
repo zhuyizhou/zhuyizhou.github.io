@@ -154,6 +154,12 @@ body {
     white-space: normal;
 }
 
+@media (min-width: 1350px) {
+    .hero-content h1 {
+        white-space: nowrap;
+    }
+}
+
 .hero-content p {
     font-family: 'Inter', sans-serif;
     font-size: clamp(1.1rem, 2vw, 1.5rem);
@@ -300,26 +306,41 @@ body {
 }
 
 footer {
-    padding: 1.5rem 8%;
-    background-color: #122b55;
+    padding: clamp(2rem, 4vw, 3rem) var(--section-padding) 1.5rem;
+    background: linear-gradient(135deg, #122b55 0%, #1b3d70 100%);
     color: white;
 }
 
 .contact-info {
     max-width: var(--content-max-width);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(160px, 0.8fr) minmax(0, 2.2fr);
+    gap: 0.55rem clamp(2rem, 6vw, 6rem);
+    align-items: start;
 }
 
 .contact-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
+    grid-row: 1 / span 3;
+    font-size: 1.3rem;
+    margin: 0;
     font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.contact-info h3::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin-top: 0.8rem;
+    background-color: #72a8e8;
 }
 
 .contact-info p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    opacity: 0.9;
+    font-size: 0.95rem;
+    margin: 0;
+    opacity: 0.88;
     line-height: 1.4;
 }
 
@@ -331,9 +352,20 @@ footer {
     footer {
         padding: 1.2rem 5%;
     }
+
+    .contact-info {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-info h3::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     .contact-info h3 {
         font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
     
     .contact-info p {
