@@ -59,7 +59,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // 创建展开视图容器
     const expandedView = document.createElement('div');
     expandedView.className = 'gallery-images-expanded';
+    expandedView.setAttribute('role', 'dialog');
+    expandedView.setAttribute('aria-modal', 'true');
     document.body.appendChild(expandedView);
+
+    expandedView.addEventListener('click', (e) => {
+        if (e.target === expandedView) {
+            expandedView.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (expandedView.style.display !== 'flex') return;
+
+        if (e.key === 'Escape') {
+            expandedView.style.display = 'none';
+        } else if (e.key === 'ArrowLeft') {
+            expandedView.querySelector('.prev')?.click();
+        } else if (e.key === 'ArrowRight') {
+            expandedView.querySelector('.next')?.click();
+        }
+    });
 
     imageStacks.forEach(stack => {
         const images = stack.querySelectorAll('img');
@@ -82,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img src="${img.src}" alt="${img.alt}">
                     </div>
                 `).join('')}
-                <button class="image-nav-btn prev">←</button>
-                <button class="image-nav-btn next">→</button>
+                <button class="image-nav-btn prev" aria-label="Previous image">←</button>
+                <button class="image-nav-btn next" aria-label="Next image">→</button>
                 <div class="image-counter">1/${images.length}</div>
             </div>
         `;
@@ -115,24 +135,5 @@ document.addEventListener('DOMContentLoaded', function() {
             showImage(currentIndex);
         });
 
-        // 点击背景关闭展开视图
-        expandedView.addEventListener('click', (e) => {
-            if (e.target === expandedView) {
-                expandedView.style.display = 'none';
-            }
-        });
-
-        // 添加键盘导航
-        document.addEventListener('keydown', (e) => {
-            if (expandedView.style.display === 'flex') {
-                if (e.key === 'ArrowLeft') {
-                    prevBtn.click();
-                } else if (e.key === 'ArrowRight') {
-                    nextBtn.click();
-                } else if (e.key === 'Escape') {
-                    expandedView.style.display = 'none';
-                }
-            }
-        });
     }
-}); 
+});

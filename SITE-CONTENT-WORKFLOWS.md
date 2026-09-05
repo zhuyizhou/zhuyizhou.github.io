@@ -21,9 +21,10 @@ A news entry is two files: an object in `news.json` and a matching `news/<id>.ht
    - `summary`: 1–2 sentences, HTML allowed (`<strong>`, `<em>`, `<sub>`, `<sup>`). Match the existing house style: open with "We are pleased to announce..." and include a one-line method/result summary.
    - `link`: `news/<id>.html` — must exactly match the filename created in step 2.
 2. **Create `news/<id>.html`** by copying an existing publication-news file as a template (e.g. `news/2026-07-15-JMCA-publication.html`). Critical details the template gets right:
-   - All asset paths use `../` (the file lives one level down): `../styles.css`, `../images/...`, `../news.html`, `../index.html`.
+   - All asset paths use `../` (the file lives one level down): `../styles.css`, `../images/...`, `../news.html`, `../home.html`.
    - It loads **only** `../styles.css` — NOT `mobile-styles.css`. Don't add it.
-   - The nav "Home" link points to `../index.html` on these detail pages (different from top-level pages, which use `home.html`).
+   - The nav "Home" link points to `../home.html` on these detail pages, matching the top-level pages.
+   - Include the shared `../nav.js` after the footer; the detail-page header must contain the same mobile menu button as the top-level pages.
    - Structure: `<header><nav>` → `news-detail-container` with a `back-link`, `news-header` (date + title), `news-detail-content` (image + `news-text` paragraph + `publication-info` block with Title/Journal/DOI).
 3. **If a new year appears**, add `<button class="filter-btn" data-year="YYYY">YYYY</button>` to the filter row in `news.html` (the filters are hardcoded HTML, not generated from JSON). Skip this if the year already has a button.
 4. `home.html`'s news section and `news.html`'s list both render dynamically from `news.json` via `script.js` / `news.js`, so they pick up the new entry automatically — no HTML edits needed there.
@@ -65,21 +66,21 @@ Most publications are also announced as a news entry. When doing both:
 - The news detail-page `<img>` and the publications `image` usually reference the **same** TOC file.
 - The news `<id>` typically appends `-publication` to the paper id (e.g. paper `2026-07-15-JMCA` → news `2026-07-15-JMCA-publication`). This is convention, not a hard rule, but follow it for consistency.
 
-## People — edit JS (data) + two HTML files (cards)
+## People — edit two HTML files (cards)
 
-Member data lives in **two** places and both must stay in sync: the `teamMembers` object in `people.js` (used for the detailed section) and hardcoded `<div class="member-card">` blocks in both `people.html` and `home.html`.
+Member data is hardcoded in `<div class="member-card">` blocks in both `people.html` and `home.html`; these two copies must stay in sync. The former unused `people.js` file has been removed and is not a data source.
 
 ### Where to edit
 - `people.html` — the full people page. Sections: Principal Investigator (`.pi-card`), Ph.D. Students, Undergraduate Students, Alumni. Each member is a `<div class="member-card">`.
-- `home.html` — the homepage "Members" slider (around line 141) shows a subset of members. It is a separate copy of the cards, NOT generated from `people.js`.
-- `people.js` — holds a `teamMembers` object with richer bios for the detailed Ph.D. student section. Currently only `phd_students` is populated.
+- `home.html` — the homepage "Members" slider (around line 141) shows a subset of members. It is a separate copy of the cards.
+- There is no active people data JS file; update the two HTML copies directly.
 - Member photos live in `images/` (e.g. `images/yanzihan.jpg`).
 
 ### Adding a new member
 1. Add the photo to `images/`.
 2. Add a `<div class="member-card">` block to `people.html` in the right section. Copy an existing card as a template; the structure is `<div class="member-photo"><img></div>` + `<div class="member-info">` with `<h3>`, `<p class="period">`, `<p class="education">` / `<p class="current">`, and `member-social` links.
 3. Add a corresponding `<div class="member-card">` to the `home.html` member slider (inside `<div class="member-slider">`). The home card is a simplified version: `<p class="period">Ph.D. Student</p>` instead of the period range, and usually one `<p class="current">` or `<p class="education">` line. Include `loading="lazy"` on the `<img>` (home uses it; people.html doesn't).
-4. If you also want the detailed bio, add an object to the `teamMembers.phd_students` (or `postdocs`) array in `people.js`. The `.photo` path is relative to repo root (`images/...`), not `../images/`.
+4. If a richer bio is needed in the future, first introduce and wire up an explicit data-rendering path; the current pages have no people data JS source.
 
 ### Member leaving / graduating (move to Alumni)
 When a member leaves (graduation, new position):

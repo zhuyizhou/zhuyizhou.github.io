@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="mobile-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preload" as="image" href="images/westlake_image.jpg">
-    <link rel="preload" as="image" href="images/group_photo.jpg">
-    <meta http-equiv="Cache-Control" content="max-age=86400, public">
+    <link rel="preload" as="image" href="images/lunbo.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script>
         var _hmt = _hmt || [];
@@ -96,7 +94,7 @@
                 </div>
                 <div class="highlight-card">
                     <div class="highlight-icon">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fas fa-laptop"></i>
                     </div>
                     <h3>AI for Materials Discovery</h3>
                     <p>Developing and applying machine learning models for accelerated materials discovery and property prediction.</p>
@@ -199,7 +197,7 @@
                             <div class="member-info">
                                 <h3>Boyi Situ</h3>
                                 <p class="period">Ph.D. Student</p>
-                                <p class="education">B.S. in in Microelectronics Science and Engineering, Yangzhou University (2020-2024)</p>
+                                <p class="education">B.S. in Microelectronics Science and Engineering, Yangzhou University (2020-2024)</p>
                                 <div class="member-social">
                                     <a href="mailto:situboyi@westlake.edu.cn" class="social-link">
                                         <i class="fas fa-envelope"></i>
@@ -320,7 +318,7 @@
             <div class="stat-item">
                 <i class="fas fa-users"></i>
                 <div class="stat-info">
-                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-number" data-target="6">0</span>
                     <p>Lab Members</p>
                 </div>
             </div>
@@ -356,6 +354,7 @@
         </div>
     </footer>
 
+    <script src="nav.js"></script>
     <script src="script.js"></script>
     <script>
         // Load publications for home page
@@ -380,7 +379,7 @@
                     const html = sortedPublications.map(pub => `
                         <div class="publication-card">
                             <div class="pub-image">
-                                <img src="${pub.image}" alt="${pub.journal}" loading="lazy">
+                                <img src="${pub.image}" alt="${pub.journal}" loading="lazy" decoding="async">
                             </div>
                             <div class="pub-content">
                                 <h4>${pub.title}</h4>
@@ -438,6 +437,5 @@
                 .catch(error => console.error('Error loading news:', error));
         }
     </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
-</html> 
+</html>

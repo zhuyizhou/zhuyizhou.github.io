@@ -1061,7 +1061,7 @@
     }
 
     /* 日期��式 */
-    .news-page .news-date {
+    .news-page .date {
         font-size: 11px !important;
         color: #0056b3;
         margin: 0 0 8px 0 !important;
@@ -1647,4 +1647,4 @@
         border-color: #0056b3 !important;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* 添加轻微阴影 */
     }
-} 
+}

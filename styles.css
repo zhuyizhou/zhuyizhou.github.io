@@ -582,6 +582,12 @@ h2::before, h2::after {
     padding: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
 /* 添加 People section 样式 */
 .people-section {
     padding: 1% var(--section-padding);
@@ -2945,4 +2951,3 @@ h2::before, h2::after {
         font-size: 0.9rem;
     }
 }
-  

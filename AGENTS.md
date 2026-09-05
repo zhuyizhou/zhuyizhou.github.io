@@ -33,7 +33,7 @@ Each content type (news, publications, people, gallery) has a different update p
 
 - **News** = `news.json` entry + matching `news/<id>.html` file + year filter button in `news.html` (if new year).
 - **Publications** = `publications.json` entry + TOC image in `images/` + year filter button in `publications.html` (if new year). No per-item HTML.
-- **People** = edit `people.js` (`teamMembers` object) + `<div class="member-card">` blocks in **both** `people.html` and `home.html` (these two must stay in sync). Photos in `images/`.
+- **People** = edit the hardcoded `<div class="member-card">` blocks in **both** `people.html` and `home.html` (these two must stay in sync). The former unused `people.js` file has been removed. Photos in `images/`.
 - **Gallery** = hardcoded `<div class="timeline-item">` blocks in `gallery.html`. Photos in `gallery/` (separate from `images/`). Categories: `group`, `events`, `research`.
 
 ## External / third-party snippets

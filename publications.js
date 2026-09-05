@@ -28,7 +28,7 @@ function loadPublications() {
                         </div>
                     </div>
                     <div class="pub-image">
-                        <img src="${pub.image}" alt="Publication Figure">
+                        <img src="${pub.image}" alt="Publication Figure" loading="lazy" decoding="async">
                     </div>
                 </div>
             `).join('');
