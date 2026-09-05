@@ -315,15 +315,18 @@ footer {
     max-width: var(--content-max-width);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(160px, 0.8fr) minmax(0, 2.2fr);
-    gap: 0.55rem clamp(2rem, 6vw, 6rem);
-    align-items: start;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.5rem clamp(2rem, 8vw, 8rem);
+    align-items: center;
+}
+
+.contact-copy {
+    min-width: 0;
 }
 
 .contact-info h3 {
-    grid-row: 1 / span 3;
     font-size: 1.3rem;
-    margin: 0;
+    margin: 0 0 0.9rem;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
@@ -348,14 +351,48 @@ footer {
     margin-bottom: 0;
 }
 
+.wechat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 1rem 1rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.wechat-card img {
+    width: 132px;
+    height: 132px;
+    padding: 4px;
+    border-radius: 8px;
+    background: #fff;
+    object-fit: contain;
+}
+
+.wechat-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
 @media (max-width: 768px) {
     footer {
         padding: 1.2rem 5%;
     }
 
     .contact-info {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4rem;
         text-align: center;
+    }
+
+    .contact-copy {
+        width: 100%;
     }
 
     .contact-info h3::after {
@@ -370,6 +407,15 @@ footer {
     
     .contact-info p {
         font-size: 0.9rem;
+    }
+
+    .wechat-card {
+        padding: 0.8rem;
+    }
+
+    .wechat-card img {
+        width: 116px;
+        height: 116px;
     }
 }
 

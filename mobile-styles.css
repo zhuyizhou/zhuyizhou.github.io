@@ -337,8 +337,15 @@
     }
 
     .contact-info {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4rem;
         text-align: center;
+    }
+
+    .contact-copy {
+        width: 100%;
     }
 
     .contact-info h3::after {
@@ -353,6 +360,19 @@
     footer p {
         font-size: 13px;
         line-height: 1.5;
+    }
+
+    .wechat-card {
+        padding: 0.8rem;
+    }
+
+    .wechat-card img {
+        width: 116px;
+        height: 116px;
+    }
+
+    .wechat-card p {
+        font-size: 13px;
     }
 
     /* 滑动按钮优化 */
