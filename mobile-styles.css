@@ -354,11 +354,11 @@
     }
 
     footer h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     footer p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.5;
     }
 
@@ -367,12 +367,12 @@
     }
 
     .wechat-card img {
-        width: 116px;
-        height: 116px;
+        width: 104px;
+        height: 104px;
     }
 
     .wechat-card p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     /* 滑动按钮优化 */
@@ -421,12 +421,12 @@
     }
 
     .contact-info h3 {
-        font-size: 18px;
+        font-size: 17px;
         margin-bottom: 10px;
     }
 
     .contact-info p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.4;
         margin-bottom: 8px;
     }

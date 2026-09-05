@@ -325,7 +325,7 @@ footer {
 }
 
 .contact-info h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0 0 0.9rem;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -341,7 +341,7 @@ footer {
 }
 
 .contact-info p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin: 0;
     opacity: 0.88;
     line-height: 1.4;
@@ -363,8 +363,8 @@ footer {
 }
 
 .wechat-card img {
-    width: 132px;
-    height: 132px;
+    width: 116px;
+    height: 116px;
     padding: 4px;
     border-radius: 8px;
     background: #fff;
@@ -374,7 +374,7 @@ footer {
 .wechat-card p {
     margin: 0;
     color: rgba(255, 255, 255, 0.88);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     white-space: nowrap;
 }
 
@@ -401,12 +401,12 @@ footer {
     }
     
     .contact-info h3 {
-        font-size: 1.2rem;
+        font-size: 17px;
         margin-bottom: 0.8rem;
     }
     
     .contact-info p {
-        font-size: 0.9rem;
+        font-size: 12px;
     }
 
     .wechat-card {
@@ -414,8 +414,8 @@ footer {
     }
 
     .wechat-card img {
-        width: 116px;
-        height: 116px;
+        width: 104px;
+        height: 104px;
     }
 }
 
@@ -575,13 +575,13 @@ h2::before, h2::after {
 }
 
 .contact-info h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
 .contact-info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     opacity: 0.8;
 }
