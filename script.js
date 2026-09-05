@@ -66,24 +66,31 @@ function initializeSliders() {
 }
 
 function initializeSlider({ container, prevBtn, nextBtn }) {
-    let scrollAmount = 0;
-    const scrollStep = container.offsetWidth;
+    function getScrollStep() {
+        const firstCard = container.firstElementChild;
+        if (!firstCard) return container.clientWidth;
 
-    nextBtn.addEventListener('click', () => {
-        scrollAmount = Math.min(scrollAmount + scrollStep, container.scrollWidth - container.offsetWidth);
+        const styles = window.getComputedStyle(container);
+        const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+        return firstCard.getBoundingClientRect().width + gap;
+    }
+
+    function scrollByCard(direction) {
+        const maxScroll = Math.max(container.scrollWidth - container.clientWidth, 0);
+        const nextScroll = Math.min(
+            Math.max(container.scrollLeft + direction * getScrollStep(), 0),
+            maxScroll
+        );
+
         container.scroll({
-            left: scrollAmount,
+            left: nextScroll,
             behavior: 'smooth'
         });
-    });
+    }
 
-    prevBtn.addEventListener('click', () => {
-        scrollAmount = Math.max(scrollAmount - scrollStep, 0);
-        container.scroll({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
+    nextBtn.addEventListener('click', () => scrollByCard(1));
+
+    prevBtn.addEventListener('click', () => scrollByCard(-1));
 }
 
 // 轮播功能
@@ -98,18 +105,31 @@ function initializeHeroSlider() {
     let currentSlide = 0;
     let slideInterval;
 
+    function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+
+        indicators.forEach((indicator, indicatorIndex) => {
+            const isActive = indicatorIndex === currentSlide;
+            indicator.classList.toggle('active', isActive);
+            indicator.setAttribute('aria-current', String(isActive));
+        });
+    }
+
     // 初始化第一张幻灯片
     slides[0].classList.add('active');
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+        indicator.setAttribute('aria-current', String(index === currentSlide));
+    });
 
     function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        indicators[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-        indicators[currentSlide].classList.add('active');
+        showSlide((currentSlide + 1) % slides.length);
     }
 
     function startSlideshow() {
+        stopSlideshow();
         slideInterval = setInterval(nextSlide, 5000); // 每5秒切换一次
     }
 
@@ -121,11 +141,7 @@ function initializeHeroSlider() {
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
             stopSlideshow();
-            slides[currentSlide].classList.remove('active');
-            indicators[currentSlide].classList.remove('active');
-            currentSlide = index;
-            slides[currentSlide].classList.add('active');
-            indicators[currentSlide].classList.add('active');
+            showSlide(index);
             startSlideshow();
         });
     });
