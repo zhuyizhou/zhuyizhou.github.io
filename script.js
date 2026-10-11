@@ -6,28 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 添加 gallery 的初始化
     initializeGallery();
-
-    // 移动端菜单控制
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuBtn.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-
-    // 点击导航链接后关闭菜单
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-
-    // 点击页面其他地方关闭菜单
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.navbar')) {
-            navLinks.classList.remove('active');
-        }
-    });
 });
 
 // 优化统计数字的动画
@@ -88,45 +66,70 @@ function initializeSliders() {
 }
 
 function initializeSlider({ container, prevBtn, nextBtn }) {
-    let scrollAmount = 0;
-    const scrollStep = container.offsetWidth;
+    function getScrollStep() {
+        const firstCard = container.firstElementChild;
+        if (!firstCard) return container.clientWidth;
 
-    nextBtn.addEventListener('click', () => {
-        scrollAmount = Math.min(scrollAmount + scrollStep, container.scrollWidth - container.offsetWidth);
+        const styles = window.getComputedStyle(container);
+        const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+        return firstCard.getBoundingClientRect().width + gap;
+    }
+
+    function scrollByCard(direction) {
+        const maxScroll = Math.max(container.scrollWidth - container.clientWidth, 0);
+        const nextScroll = Math.min(
+            Math.max(container.scrollLeft + direction * getScrollStep(), 0),
+            maxScroll
+        );
+
         container.scroll({
-            left: scrollAmount,
+            left: nextScroll,
             behavior: 'smooth'
         });
-    });
+    }
 
-    prevBtn.addEventListener('click', () => {
-        scrollAmount = Math.max(scrollAmount - scrollStep, 0);
-        container.scroll({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
+    nextBtn.addEventListener('click', () => scrollByCard(1));
+
+    prevBtn.addEventListener('click', () => scrollByCard(-1));
 }
 
 // 轮播功能
 function initializeHeroSlider() {
+    const heroSection = document.querySelector('.hero');
+    if (!heroSection) return;
+
     const slides = document.querySelectorAll('.hero-slide');
     const indicators = document.querySelectorAll('.indicator');
+    if (!slides.length || !indicators.length) return;
+
     let currentSlide = 0;
     let slideInterval;
 
+    function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+
+        indicators.forEach((indicator, indicatorIndex) => {
+            const isActive = indicatorIndex === currentSlide;
+            indicator.classList.toggle('active', isActive);
+            indicator.setAttribute('aria-current', String(isActive));
+        });
+    }
+
     // 初始化第一张幻灯片
     slides[0].classList.add('active');
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+        indicator.setAttribute('aria-current', String(index === currentSlide));
+    });
 
     function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        indicators[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-        indicators[currentSlide].classList.add('active');
+        showSlide((currentSlide + 1) % slides.length);
     }
 
     function startSlideshow() {
+        stopSlideshow();
         slideInterval = setInterval(nextSlide, 5000); // 每5秒切换一次
     }
 
@@ -138,11 +141,7 @@ function initializeHeroSlider() {
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
             stopSlideshow();
-            slides[currentSlide].classList.remove('active');
-            indicators[currentSlide].classList.remove('active');
-            currentSlide = index;
-            slides[currentSlide].classList.add('active');
-            indicators[currentSlide].classList.add('active');
+            showSlide(index);
             startSlideshow();
         });
     });
@@ -151,7 +150,6 @@ function initializeHeroSlider() {
     startSlideshow();
 
     // 鼠标悬停时暂停播放
-    const heroSection = document.querySelector('.hero');
     heroSection.addEventListener('mouseenter', stopSlideshow);
     heroSection.addEventListener('mouseleave', startSlideshow);
 }
@@ -193,4 +191,4 @@ function initializeGallery() {
             });
         });
     }, 0);
-} 
+}

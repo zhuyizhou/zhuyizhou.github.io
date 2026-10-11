@@ -12,15 +12,20 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="../images/westlake_logo.png" alt="Westlake University">
+                <a href="https://www.westlake.edu.cn" aria-label="Westlake University Link">
+                    <img src="../images/westlake_logo.png" alt="Westlake University">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../home.html">Home</a></li>
                 <li><a href="../research.html">Research</a></li>
                 <li><a href="../people.html">People</a></li>
                 <li><a href="../publications.html">Publications</a></li>
                 <li><a href="../gallery.html">Gallery</a></li>
-                <li><a href="../news.html" class="active">News</a></li>
+                <li><a href="../news.html" class="active" aria-current="page">News</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +42,7 @@
             </div>
 
             <div class="news-detail-content">
-                <img src="../images/2026-08-08-AEM.png" alt="AEM Publication" class="news-image">
+                <img src="../images/2026-08-08-AEM.jpg" alt="AEM Publication" class="news-image">
                 
                 <div class="news-text">
                     <p>We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Adv. Energy Mater.</em></strong>. Sulfide lithium superionic conductors are among the most promising solid-state electrolytes for all-solid-state lithium batteries. However, discovering novel sulfide conductors with high ionic conductivity remains challenging due to the vast chemical and structural space. In this work, we develop a structural-feature-constrained generative model that efficiently generates promising sulfide conductors by constraining key structural features. The model narrows the search space while preserving structural diversity, enabling the computational discovery of new sulfide lithium superionic conductors with high ionic conductivity and expanding the design space for solid-state electrolytes.</p>
@@ -45,7 +50,7 @@
                     <div class="publication-info">
                         <p><strong>Title:</strong> Computational Discovery of Novel Sulfide Lithium Superionic Conductors via a Structural-Feature-Constrained Generative Model</p>
                         <p><strong>Journal:</strong> Adv. Energy Mater. 2026, e71368</p>
-                        <p><strong>DOI:</strong> <a href="https://doi.org/10.1002/aenm.71368" target="_blank">10.1002/aenm.71368</a></p>
+                        <p><strong>DOI:</strong> <a href="https://doi.org/10.1002/aenm.71368" target="_blank" rel="noopener noreferrer">10.1002/aenm.71368</a></p>
                     </div>
                 </div>
             </div>
@@ -54,13 +59,19 @@
 
     <footer>
         <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Address: Yungu Campus, Westlake University, 600 Dunyu Road, Xihu District, Hangzhou</p>
-            <p>Postal Code: 310030</p>
-            <p>Email: zhuyizhou@westlake.edu.cn</p>
+            <div class="contact-copy">
+                <h3>Contact Us</h3>
+                <p>Address: Yungu Campus, Westlake University, 600 Dunyu Road, Xihu District, Hangzhou</p>
+                <p>Postal Code: 310030</p>
+                <p>Email: zhuyizhou@westlake.edu.cn</p>
+            </div>
+            <div class="wechat-card">
+                <img src="../images/wechataccount.jpg" alt="Scan to follow the Computational Materials Lab WeChat account" loading="lazy" decoding="async">
+                <p>Follow us on WeChat</p>
+            </div>
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../nav.js"></script>
 </body>
 </html>

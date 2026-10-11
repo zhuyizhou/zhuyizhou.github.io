@@ -8,7 +8,7 @@
       "year": 2026,
       "date": "2026-08-08",
       "doi": "https://doi.org/10.1002/aenm.71368",
-      "image": "images/2026-08-08-AEM.png",
+      "image": "images/2026-08-08-AEM.jpg",
       "abstract": "We develop a structural-feature-constrained generative model for the computational discovery of novel sulfide lithium superionic conductors. By constraining key structural features, the model efficiently generates promising sulfide conductors and identifies new materials with high ionic conductivity, expanding the design space for solid-state electrolytes."
     },
     {
@@ -52,7 +52,7 @@
       "year": 2026,
       "date": "2026-05-21",
       "doi": "https://doi.org/10.1002/aenm.71103",
-      "image": "images/2026-05-21-aem.png",
+      "image": "images/2026-05-21-aem.jpg",
       "abstract": "The practical application of sodium superionic conductor (NASICON) electrolytes in solid-state sodium batteries is restricted by poor interfacial compatibility between the solid electrolyte and Na anode, as well as continuous dendrite growth."
     },    
     {
@@ -96,7 +96,7 @@
       "year": 2026,
       "date": "2026-03-04",
       "doi": "https://doi.org/10.1126/sciadv.aeb3559",
-      "image": "images/2026-03-04-sciadv.png",
+      "image": "images/2026-03-04-sciadv.jpg",
       "abstract": "Deciphering the mechanisms governing photoinduced phase segregation in mixed halide perovskites is essential to unlock their full potential in stable, high-performance optoelectronic applications. We uncover the mechanism by which residual local strain acts as a key driving force of light-induced phase segregation. By combining in situ transmission electron microscopy with photoluminescence spectroscopy, we observe structural evolution and photocarrier behavior during phase segregation and after re-mixing."
     },  
     {
@@ -162,7 +162,7 @@
       "year": 2025,
       "date": "2025-09-10",
       "doi": "https://doi.org/10.1038/s41586-025-09498-7",
-      "image": "images/2025-09-10-nature.png",
+      "image": "images/2025-09-10-nature.jpg",
       "abstract": "The electrolyte–electrode interface serves as the foundation for a myriad of chemical and physical processes. In battery chemistry, the formation of a well-known solid–electrolyte interphase (SEI) plays a pivotal role in ensuring the reversible operations of rechargeable lithium-ion batteries (LIBs). However, characterizing the precise chemical composition of the low crystallinity and highly sensitive SEI presents a formidable challenge."
     },
     {
@@ -239,7 +239,7 @@
       "year": 2024,
       "date": "2024-11-20",
       "doi": "https://doi.org/10.1021/acs.chemmater.4c02454",
-      "image": "images/CM.png",
+      "image": "images/CM.jpg",
       "abstract": "The tetragonal garnet-type Li7La3Zr2O12 (t-LLZO) has been widely studied as a promising solid electrolyte for all-solid-state lithium batteries. In this work, we systematically investigate the impact of lithium content on the ionic transport properties of t-LLZO using first-principles calculations and molecular dynamics simulations. Our findings reveal the critical role of lithium vacancy concentration in determining the ionic conductivity..."
     },
     {
@@ -261,7 +261,7 @@
       "year": 2024,
       "date": "2024-07-06",
       "doi": "https://doi.org/10.1021/acsnano.4c02678",
-      "image": "images/acsnano.png",
+      "image": "images/acsnano.jpg",
       "abstract": "All-solid-state batteries (ASSBs) have garnered considerable attention as promising candidates for next-generation energy storage systems due to their potentially simultaneously enhanced safety capacities and improved energy densities. However, the solid future still calls for materials with high ionic conductivity, electrochemical stability, and favorable interfacial compatibility. In this study, we present a series of halide solid-state electrolytes (SSEs) utilizing a doping strategy with highly valent elements, demonstrating an outstanding combination of enhanced ionic conductivity and oxidation stability. Among these, ..."
     },
     {

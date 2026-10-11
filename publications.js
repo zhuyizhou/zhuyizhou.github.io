@@ -22,13 +22,13 @@ function loadPublications() {
                             <p>${pub.abstract}</p>
                         </div>
                         <div class="pub-links">
-                            <a href="${pub.doi}" target="_blank" class="pub-link">
+                            <a href="${pub.doi}" target="_blank" rel="noopener noreferrer" class="pub-link">
                                 <i class="fas fa-external-link-alt"></i> DOI
                             </a>
                         </div>
                     </div>
                     <div class="pub-image">
-                        <img src="${pub.image}" alt="Publication Figure">
+                        <img src="${pub.image}" alt="Publication Figure" loading="lazy" decoding="async">
                     </div>
                 </div>
             `).join('');

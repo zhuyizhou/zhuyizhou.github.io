@@ -12,15 +12,20 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="../images/westlake_logo.png" alt="Westlake University">
+                <a href="https://www.westlake.edu.cn" aria-label="Westlake University Link">
+                    <img src="../images/westlake_logo.png" alt="Westlake University">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../home.html">Home</a></li>
                 <li><a href="../research.html">Research</a></li>
                 <li><a href="../people.html">People</a></li>
                 <li><a href="../publications.html">Publications</a></li>
                 <li><a href="../gallery.html">Gallery</a></li>
-                <li><a href="../news.html" class="active">News</a></li>
+                <li><a href="../news.html" class="active" aria-current="page">News</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +50,7 @@
                     <div class="publication-info">
                         <p><strong>Title:</strong> Multi-anion/cation engineering enables fast ion transport and stable interfaces in Zr-based halide electrolytes for all-solid-state batteries</p>
                         <p><strong>Journal:</strong> Chem. Sci. (online)</p>
-                        <p><strong>DOI:</strong> <a href="https://doi.org/10.1039/d6sc04008j" target="_blank">10.1039/d6sc04008j</a></p>
+                        <p><strong>DOI:</strong> <a href="https://doi.org/10.1039/d6sc04008j" target="_blank" rel="noopener noreferrer">10.1039/d6sc04008j</a></p>
                     </div>
                 </div>
             </div>
@@ -54,13 +59,19 @@
 
     <footer>
         <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Address: Yungu Campus, Westlake University, 600 Dunyu Road, Xihu District, Hangzhou</p>
-            <p>Postal Code: 310030</p>
-            <p>Email: zhuyizhou@westlake.edu.cn</p>
+            <div class="contact-copy">
+                <h3>Contact Us</h3>
+                <p>Address: Yungu Campus, Westlake University, 600 Dunyu Road, Xihu District, Hangzhou</p>
+                <p>Postal Code: 310030</p>
+                <p>Email: zhuyizhou@westlake.edu.cn</p>
+            </div>
+            <div class="wechat-card">
+                <img src="../images/wechataccount.jpg" alt="Scan to follow the Computational Materials Lab WeChat account" loading="lazy" decoding="async">
+                <p>Follow us on WeChat</p>
+            </div>
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../nav.js"></script>
 </body>
 </html> 
