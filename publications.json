@@ -1,6 +1,28 @@
 {
   "publications": [
     {
+      "id": "2026-10-13-CM",
+      "title": "High-Throughput Discovery of Superionic Conductors Featuring Symmetrically Equivalent Interstitial Sites",
+      "authors": "Xizhe Zhang, Yizhou Zhu*",
+      "journal": "Chem. Mater. 2026, 38 9949–9960",
+      "year": 2026,
+      "date": "2026-10-13",
+      "doi": "https://doi.org/10.1021/acs.chemmater.6c01341",
+      "image": "images/2026-10-13-CM.png",
+      "abstract": "Superionic conductors exhibit exceptionally high ionic conductivity, making them crucial in next-generation solid-state batteries and solid oxide fuel cells. Here, we observe that the low-temperature phases of well-known superionic conductors contain interstitial sites with nearly identical local chemical environments to those of lattice sites, which become activated at elevated temperatures and facilitate ion transport. Based on a symmetry-based strategy, we combine high-throughput screening with machine-learning-force-field molecular dynamics to identify five, four, and three new oxygen-, lithium-, and sodium-based superionic conductors with diffusion properties comparable to leading materials."
+    },
+    {
+      "id": "2026-09-07-perspective",
+      "title": "A Perspective on Training Machine Learning Force Fields for Solid-State Electrolyte Materials",
+      "authors": "Zihan Yan, Shengjie Tang, Yizhou Zhu*",
+      "journal": "npj Energy Mater. 2026, 1, 14",
+      "year": 2026,
+      "date": "2026-09-07",
+      "doi": "https://doi.org/10.1038/s44456-026-00014-4",
+      "image": "images/2026-09-07-perspective.png",
+      "abstract": "Machine learning force fields enable high-accuracy modeling of solid-state electrolytes (SSEs). This perspective evaluates dataset size, reference quality, and model architectures. We show that crystalline frameworks of bulk SSEs favor efficient learning, prioritizing data quality over quantity. Crucially, force RMSE does not reliably predict transport performance. By analyzing locality and benchmarking frameworks, we provide practical guidelines for modeling bulk SSEs to accelerate the development of next-generation solid-state batteries."
+    },
+    {
       "id": "2026-08-08-AEM",
       "title": "Computational Discovery of Novel Sulfide Lithium Superionic Conductors via a Structural-Feature-Constrained Generative Model",
       "authors": "Boyi Situ, Zihan Yan, Yizhou Zhu*",
@@ -76,17 +98,6 @@
       "doi": "https://doi.org/10.1021/acsnano.6c00369",
       "image": "images/2026-04-08-ACSnano.png",
       "abstract": "Nanoparticle morphology is a critical determinant of physical and chemical properties, yet the fundamental mechanisms governing how specific shapes emerge during crystallization remain elusive. In this work, we reveal that the final morphology of binary core–shell nanoparticles is governed by a kinetic bifurcation in nucleation modes: surface-nucleation mode and inner-nucleation mode."
-    },
-    {
-      "id": "2026-03-08-perspective",
-      "title": "A Perspective on Training Machine Learning Force Fields for Solid-State Electrolyte Materials",
-      "authors": "Zihan Yan, Shengjie Tang, Yizhou Zhu*",
-      "journal": "arXiv:2603.07425",
-      "year": 2026,
-      "date": "2026-03-08",
-      "doi": "https://doi.org/10.48550/arXiv.2603.07425",
-      "image": "images/2026-03-08-perspective.png",
-      "abstract": "Machine learning force fields enable high-accuracy modeling of solid-state electrolytes (SSEs). This perspective evaluates dataset size, reference quality, and model architectures. We show that rigid SSE frameworks favor efficient learning, prioritizing data quality over quantity. Crucially, force RMSE does not reliably predict transport performance. By analyzing locality and benchmarking frameworks, we provide practical guidelines to accelerate the development of next-generation solid-state batteries."
     },
     {
       "id": "2026-03-04-sciadv",

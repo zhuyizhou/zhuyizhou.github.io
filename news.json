@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "id": "2026-10-13-CM-publication",
+      "title": "New Publication in Chem. Mater.",
+      "date": "2026-10-13",
+      "year": 2026,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>Chem. Mater.</em></strong>. Based on a symmetry-based strategy, we identify materials with symmetry-equivalent interstitial sites and, by combining high-throughput screening with machine-learning-force-field molecular dynamics, discover new oxygen-, lithium-, and sodium-based superionic conductors.",
+      "link": "news/2026-10-13-CM-publication.html"
+    },
+    {
+      "id": "2026-09-07-perspective-publication",
+      "title": "New Publication in npj Energy Mater.",
+      "date": "2026-09-07",
+      "year": 2026,
+      "summary": "We are pleased to announce that our latest research paper has been accepted for publication in <strong><em>npj Energy Mater.</em></strong>. This perspective evaluates dataset size, reference quality, and model architectures for machine learning force fields, showing that crystalline frameworks of bulk solid-state electrolytes favor efficient learning and that force RMSE does not reliably predict transport performance.",
+      "link": "news/2026-09-07-perspective-publication.html"
+    },
+    {
       "id": "2026-08-08-AEM-publication",
       "title": "New Publication in Adv. Energy Mater.",
       "date": "2026-08-08",

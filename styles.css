@@ -234,6 +234,7 @@ body {
     line-height: 1.8;
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 .about-text p:last-child {
@@ -959,6 +960,7 @@ h2::before, h2::after {
 .pi-info .bio p {
     margin-bottom: 0.8rem;
     line-height: 1.8;
+    text-align: justify;
 }
 
 .contact {
@@ -2327,6 +2329,7 @@ h2::before, h2::after {
     color: #444;
     font-size: 1.1rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .research-description ul {
@@ -2339,6 +2342,7 @@ h2::before, h2::after {
     position: relative;
     padding-left: 2rem; /* 增加左边距，为图标留出空间 */
     line-height: 1.6;
+    text-align: justify;
 }
 
 .research-description li::before {
@@ -2472,6 +2476,7 @@ h2::before, h2::after {
     color: #666;
     font-size: 0.95rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 @media (max-width: 1024px) {
